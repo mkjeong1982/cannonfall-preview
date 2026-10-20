@@ -1,0 +1,62 @@
+{
+  "maps": {
+    "green-canyon": {
+      "bg": "maps/green-canyon/bg.png",
+      "fallzone": "maps/green-canyon/fallzone.png",
+      "palette": {
+        "sky": "#A6D9EE",
+        "surface": "#75C65A",
+        "soil": "#B6784C",
+        "deep": "#86513B",
+        "outline": "#33453C",
+        "debris": "#AD7950"
+      }
+    }
+  },
+  "cannons": {
+    "default-blue": {
+      "body": "cannons/default-blue/body.png",
+      "barrel": "cannons/default-blue/barrel.png",
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.15,
+        0.5
+      ],
+      "barrelMount": [
+        0,
+        -14
+      ],
+      "thumb": "cannons/default-blue/thumb.png"
+    },
+    "default-red": {
+      "body": "cannons/default-red/body.png",
+      "barrel": "cannons/default-red/barrel.png",
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.15,
+        0.5
+      ],
+      "barrelMount": [
+        0,
+        -14
+      ],
+      "thumb": "cannons/default-red/thumb.png"
+    }
+  },
+  "fx": {
+    "ball": "fx/ball.png",
+    "explosion": {
+      "sheet": "fx/explosion.png",
+      "frameW": 192,
+      "frameH": 192,
+      "frames": 6
+    }
+  },
+  "scale": 3
+}
