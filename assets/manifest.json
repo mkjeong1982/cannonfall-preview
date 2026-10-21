@@ -132,6 +132,26 @@
       "frameW": 96,
       "frameH": 96,
       "frames": 4
+    },
+    "veil": {
+      "split": "fx/veil-split.png",
+      "big": "fx/veil-big.png",
+      "reverse": "fx/veil-reverse.png",
+      "frameW": 72,
+      "frameH": 390,
+      "frames": 4
+    },
+    "veilIcons": {
+      "sheet": "fx/veil-icons.png",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 3
+    },
+    "veilBurst": {
+      "sheet": "fx/veil-burst.png",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 4
     }
   },
   "scale": 3
