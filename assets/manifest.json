@@ -219,6 +219,14 @@
       "src": "ui/reload-box.png",
       "slice": 13
     },
+    "reload": {
+      "rail": "ui/reload/rail.png",
+      "ball": "ui/reload/ball.png",
+      "load": { "sheet": "ui/reload/load.png", "frameW": 450, "frameH": 192, "frames": 6 },
+      "ready": { "sheet": "ui/reload/ready.png", "frameW": 450, "frameH": 192, "frames": 4 },
+      "trackFill": { "src": "ui/reload/track-fill.png", "slice": 4 },
+      "path": [[24, 25], [107, 29]]
+    },
     "profile": {
       "cardBase": {
         "src": "ui/profile/card-base.png",
