@@ -20,7 +20,15 @@
         "frameH": 96,
         "frames": 4
       },
-      "fallFx": "splash"
+      "fallFx": "splash",
+      "mid": "maps/green-canyon/mid.png",
+      "surface": "maps/green-canyon/surface.png",
+      "decor": {
+        "sheet": "maps/green-canyon/decor.png",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      }
     },
     "sky-islands": {
       "bg": "maps/sky-islands/bg.png",
@@ -42,7 +50,15 @@
         "frameH": 96,
         "frames": 4
       },
-      "fallFx": "clouds"
+      "fallFx": "clouds",
+      "mid": "maps/sky-islands/mid.png",
+      "surface": "maps/sky-islands/surface.png",
+      "decor": {
+        "sheet": "maps/sky-islands/decor.png",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      }
     }
   },
   "cannons": {
@@ -58,10 +74,16 @@
         0.5
       ],
       "barrelMount": [
-        0,
-        -14
+        5,
+        -21
       ],
-      "thumb": "cannons/default-blue/thumb.png"
+      "thumb": "cannons/default-blue/thumb.png",
+      "damaged": "cannons/default-blue/body-damaged.png",
+      "wreck": "cannons/default-blue/wreck.png",
+      "muzzle": [
+        0.99,
+        0.5
+      ]
     },
     "default-red": {
       "body": "cannons/default-red/body.png",
@@ -75,10 +97,16 @@
         0.5
       ],
       "barrelMount": [
-        0,
-        -14
+        5,
+        -21
       ],
-      "thumb": "cannons/default-red/thumb.png"
+      "thumb": "cannons/default-red/thumb.png",
+      "damaged": "cannons/default-red/body-damaged.png",
+      "wreck": "cannons/default-red/wreck.png",
+      "muzzle": [
+        0.99,
+        0.5
+      ]
     }
   },
   "fx": {
@@ -88,6 +116,18 @@
       "frameW": 192,
       "frameH": 192,
       "frames": 6
+    },
+    "muzzle": {
+      "sheet": "fx/muzzle.png",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 4
+    },
+    "smoke": {
+      "sheet": "fx/smoke.png",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 4
     }
   },
   "scale": 3
