@@ -137,20 +137,21 @@
       "split": "fx/veil-split.png",
       "big": "fx/veil-big.png",
       "reverse": "fx/veil-reverse.png",
-      "frameW": 72,
-      "frameH": 390,
-      "frames": 4
+      "frameW": 120,
+      "frameH": 720,
+      "frames": 4,
+      "capSlice": 20
     },
     "veilIcons": {
       "sheet": "fx/veil-icons.png",
-      "frameW": 96,
-      "frameH": 96,
+      "frameW": 144,
+      "frameH": 144,
       "frames": 3
     },
     "veilBurst": {
       "sheet": "fx/veil-burst.png",
-      "frameW": 96,
-      "frameH": 96,
+      "frameW": 144,
+      "frameH": 144,
       "frames": 4
     }
   },
