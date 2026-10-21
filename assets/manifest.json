@@ -10,7 +10,39 @@
         "deep": "#86513B",
         "outline": "#33453C",
         "debris": "#AD7950"
-      }
+      },
+      "style": "canyon",
+      "fill": "maps/green-canyon/fill.png",
+      "underside": "maps/green-canyon/underside.png",
+      "chunks": {
+        "sheet": "maps/green-canyon/chunks.png",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "fallFx": "splash"
+    },
+    "sky-islands": {
+      "bg": "maps/sky-islands/bg.png",
+      "fallzone": "maps/sky-islands/fallzone.png",
+      "palette": {
+        "sky": "#DDF1F6",
+        "surface": "#97CE80",
+        "soil": "#C7A777",
+        "deep": "#6D6575",
+        "outline": "#34455D",
+        "debris": "#99876E"
+      },
+      "style": "floating",
+      "fill": "maps/sky-islands/fill.png",
+      "underside": "maps/sky-islands/underside.png",
+      "chunks": {
+        "sheet": "maps/sky-islands/chunks.png",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "fallFx": "clouds"
     }
   },
   "cannons": {
