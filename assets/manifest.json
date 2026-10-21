@@ -154,5 +154,92 @@
       "frames": 4
     }
   },
-  "scale": 3
+  "scale": 3,
+  "ui": {
+    "btn": {
+      "green": [
+        "ui/btn-green.png",
+        "ui/btn-green-down.png"
+      ],
+      "blue": [
+        "ui/btn-blue.png",
+        "ui/btn-blue-down.png"
+      ],
+      "orange": [
+        "ui/btn-orange.png",
+        "ui/btn-orange-down.png"
+      ],
+      "gray": [
+        "ui/btn-gray.png"
+      ],
+      "slice": 12
+    },
+    "btnRound": [
+      "ui/btn-round.png",
+      "ui/btn-round-down.png"
+    ],
+    "icons": {
+      "sheet": "ui/icons.png",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 8,
+      "names": [
+        "soundOn",
+        "soundOff",
+        "home",
+        "retry",
+        "settings",
+        "shop",
+        "trophy",
+        "lock"
+      ]
+    },
+    "panel": {
+      "src": "ui/panel.png",
+      "slice": 16
+    },
+    "barFrame": {
+      "src": "ui/bar-frame.png",
+      "slice": 9
+    },
+    "barFill": {
+      "src": "ui/bar-fill.png",
+      "slice": 7
+    },
+    "topbar": {
+      "src": "ui/topbar.png",
+      "slice": 16
+    },
+    "controlbar": {
+      "src": "ui/controlbar.png",
+      "slice": 16
+    },
+    "reloadBox": {
+      "src": "ui/reload-box.png",
+      "slice": 13
+    },
+    "profile": {
+      "cardBase": {
+        "src": "ui/profile/card-base.png",
+        "slice": 20
+      },
+      "frames": {
+        "default": "ui/profile/frame-default.png",
+        "gold": "ui/profile/frame-gold.png",
+        "flame": "ui/profile/frame-flame.png"
+      },
+      "plates": {
+        "default": "ui/profile/plate-default.png",
+        "sky": "ui/profile/plate-sky.png",
+        "candy": "ui/profile/plate-candy.png"
+      },
+      "badgeSlot": "ui/profile/badge-slot.png",
+      "rankIcons": {
+        "sheet": "ui/profile/rank-icons.png",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 5
+      }
+    }
+  }
 }
