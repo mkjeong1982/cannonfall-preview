@@ -241,6 +241,15 @@
         "frameH": 96,
         "frames": 5
       }
+    },
+    "howto": {
+      "touch": "ui/howto/touch.png",
+      "mouse": "ui/howto/mouse.png",
+      "keyboard": "ui/howto/keyboard.png",
+      "goal": "ui/howto/goal.png",
+      "veils": "ui/howto/veils.png",
+      "maps": "ui/howto/maps.png",
+      "frameH": 270
     }
   }
 }
