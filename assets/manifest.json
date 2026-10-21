@@ -28,7 +28,9 @@
         "frameW": 96,
         "frameH": 96,
         "frames": 6
-      }
+      },
+      "rock": "maps/green-canyon/rock.png",
+      "rockTop": "maps/green-canyon/rock-top.png"
     },
     "sky-islands": {
       "bg": "maps/sky-islands/bg.png",
@@ -58,7 +60,9 @@
         "frameW": 96,
         "frameH": 96,
         "frames": 6
-      }
+      },
+      "rock": "maps/sky-islands/rock.png",
+      "rockTop": "maps/sky-islands/rock-top.png"
     }
   },
   "cannons": {
