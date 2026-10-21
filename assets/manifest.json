@@ -63,6 +63,26 @@
       },
       "rock": "maps/sky-islands/rock.png",
       "rockTop": "maps/sky-islands/rock-top.png"
+    },
+    "moon-rocks": {
+      "bg": "maps/moon-rocks/bg.png",
+      "mid": "maps/moon-rocks/mid.png",
+      "fallzone": "maps/moon-rocks/fallzone.png",
+      "palette": {
+        "sky": "#596EC3",
+        "surface": "#E5E3E8",
+        "soil": "#C4C4D5",
+        "deep": "#8888A5",
+        "outline": "#3D4567",
+        "debris": "#B4B2CA"
+      },
+      "style": "floating",
+      "fill": "maps/moon-rocks/fill.png",
+      "underside": "maps/moon-rocks/underside.png",
+      "surface": "maps/moon-rocks/surface.png",
+      "decor": { "sheet": "maps/moon-rocks/decor.png", "frameW": 96, "frameH": 96, "frames": 6 },
+      "chunks": { "sheet": "maps/moon-rocks/chunks.png", "frameW": 96, "frameH": 96, "frames": 4 },
+      "fallFx": "void"
     }
   },
   "cannons": {
