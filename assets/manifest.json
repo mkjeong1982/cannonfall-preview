@@ -83,6 +83,26 @@
       "decor": { "sheet": "maps/moon-rocks/decor.png", "frameW": 96, "frameH": 96, "frames": 6 },
       "chunks": { "sheet": "maps/moon-rocks/chunks.png", "frameW": 96, "frameH": 96, "frames": 4 },
       "fallFx": "void"
+    },
+    "snow-fortress": {
+      "bg": "maps/snow-fortress/bg.png",
+      "mid": "maps/snow-fortress/mid.png",
+      "fallzone": "maps/snow-fortress/fallzone.png",
+      "palette": {
+        "sky": "#4B8FDC",
+        "surface": "#F0F7F7",
+        "soil": "#B9D8E9",
+        "deep": "#73A6C9",
+        "outline": "#30587D",
+        "debris": "#ACCCDF"
+      },
+      "style": "cliff",
+      "fill": "maps/snow-fortress/fill.png",
+      "underside": "maps/snow-fortress/underside.png",
+      "surface": "maps/snow-fortress/surface.png",
+      "decor": { "sheet": "maps/snow-fortress/decor.png", "frameW": 96, "frameH": 96, "frames": 6 },
+      "chunks": { "sheet": "maps/snow-fortress/chunks.png", "frameW": 96, "frameH": 96, "frames": 4 },
+      "fallFx": "ice"
     }
   },
   "cannons": {
