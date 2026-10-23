@@ -213,7 +213,12 @@
       "frameW": 144,
       "frameH": 144,
       "frames": 4
-    }
+    },
+    "fireBall": { "sheet": "fx/fire-ball.png", "frameW": 30, "frameH": 30, "frames": 4, "pixelRatio": 3 },
+    "fireTrail": { "sheet": "fx/fire-trail.png", "frameW": 48, "frameH": 48, "frames": 6, "pixelRatio": 3 },
+    "fireExplosion": { "sheet": "fx/fire-explosion.png", "frameW": 192, "frameH": 192, "frames": 8, "pixelRatio": 3 },
+    "ember": { "sheet": "fx/ember.png", "frameW": 24, "frameH": 24, "frames": 3, "pixelRatio": 3 },
+    "scorch": { "src": "fx/scorch.png", "width": 128, "height": 128, "pixelRatio": 2 }
   },
   "scale": 3,
   "ui": {
