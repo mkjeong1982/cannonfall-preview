@@ -261,11 +261,21 @@
     },
     "barFrame": {
       "src": "ui/bar-frame.png",
-      "slice": 9
+      "slice": 9,
+      "width": 384,
+      "height": 54,
+      "pixelRatio": 3
     },
     "barFill": {
       "src": "ui/bar-fill.png",
-      "slice": 7
+      "slice": 7,
+      "width": 384,
+      "height": 42,
+      "pixelRatio": 3,
+      "tints": {
+        "power": ["#FFD35D", "#F99C48", "#EC625C"],
+        "hp": ["#52DA78", "#F4CF60", "#ED6565"]
+      }
     },
     "topbar": {
       "src": "ui/topbar.png",
@@ -273,7 +283,31 @@
     },
     "controlbar": {
       "src": "ui/controlbar.png",
-      "slice": 16
+      "slice": 16,
+      "width": 192,
+      "height": 150,
+      "pixelRatio": 3
+    },
+    "labelTags": {
+      "pixelRatio": 2,
+      "displaySize": [88, 20],
+      "dockOverlap": 9,
+      "fontSize": 13,
+      "textBounds": [27, 2, 55, 16],
+      "power": { "src": "ui/label-power.png", "width": 176, "height": 40 },
+      "hp": { "src": "ui/label-hp.png", "width": 176, "height": 40 }
+    },
+    "reloadDial": {
+      "pixelRatio": 2,
+      "displaySize": [72, 72],
+      "base": { "src": "ui/reload/dial-base.png", "width": 144, "height": 144 },
+      "ring": { "src": "ui/reload/dial-ring.png", "width": 144, "height": 144 },
+      "ready": { "src": "ui/reload/dial-ready.png", "width": 144, "height": 144 },
+      "shellIcon": { "src": "ui/reload/shell-icon.png", "width": 48, "height": 48 },
+      "shellBounds": [24, 16, 24, 24],
+      "numberBounds": [17, 40, 38, 20],
+      "tints": { "loadingStart": "#8E9EAA", "loadingEnd": "#F9AD53", "ready": "#66EE9A" },
+      "sweep": { "center": [36, 36], "outerRadius": 32, "innerRadius": 24, "startAngle": -90, "clockwise": true }
     },
     "reloadBox": {
       "src": "ui/reload-box.png",
