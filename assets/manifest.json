@@ -103,6 +103,26 @@
       "decor": { "sheet": "maps/snow-fortress/decor.png", "frameW": 96, "frameH": 96, "frames": 6 },
       "chunks": { "sheet": "maps/snow-fortress/chunks.png", "frameW": 96, "frameH": 96, "frames": 4 },
       "fallFx": "ice"
+    },
+    "desert-ruins": {
+      "bg": "maps/desert-ruins/bg.png",
+      "mid": "maps/desert-ruins/mid.png",
+      "fallzone": "maps/desert-ruins/fallzone.png",
+      "palette": {
+        "sky": "#67AFE4",
+        "surface": "#F1C584",
+        "soil": "#D7A86B",
+        "deep": "#A5744C",
+        "outline": "#704D38",
+        "debris": "#C7935E"
+      },
+      "style": "cliff",
+      "fill": "maps/desert-ruins/fill.png",
+      "underside": "maps/desert-ruins/underside.png",
+      "surface": "maps/desert-ruins/surface.png",
+      "decor": { "sheet": "maps/desert-ruins/decor.png", "frameW": 96, "frameH": 96, "frames": 6 },
+      "chunks": { "sheet": "maps/desert-ruins/chunks.png", "frameW": 96, "frameH": 96, "frames": 4 },
+      "fallFx": "quicksand"
     }
   },
   "cannons": {
