@@ -171,6 +171,61 @@
         0.99,
         0.5
       ]
+    },
+    "pirate": {
+      "body": "cannons/pirate/body.png",
+      "barrel": "cannons/pirate/barrel.png",
+      "bodyAnchor": [0.5, 1.0],
+      "barrelPivot": [0.15, 0.5],
+      "barrelMount": [5, -21],
+      "thumb": "cannons/pirate/thumb.png",
+      "damaged": "cannons/pirate/body-damaged.png",
+      "wreck": "cannons/pirate/wreck.png",
+      "muzzle": [0.99, 0.5]
+    },
+    "gold": {
+      "body": "cannons/gold/body.png",
+      "barrel": "cannons/gold/barrel.png",
+      "bodyAnchor": [0.5, 1.0],
+      "barrelPivot": [0.15, 0.5],
+      "barrelMount": [5, -21],
+      "thumb": "cannons/gold/thumb.png",
+      "damaged": "cannons/gold/body-damaged.png",
+      "wreck": "cannons/gold/wreck.png",
+      "muzzle": [0.99, 0.5]
+    },
+    "robot": {
+      "body": "cannons/robot/body.png",
+      "barrel": "cannons/robot/barrel.png",
+      "bodyAnchor": [0.5, 1.0],
+      "barrelPivot": [0.15, 0.5],
+      "barrelMount": [5, -21],
+      "thumb": "cannons/robot/thumb.png",
+      "damaged": "cannons/robot/body-damaged.png",
+      "wreck": "cannons/robot/wreck.png",
+      "muzzle": [0.99, 0.5]
+    },
+    "space": {
+      "body": "cannons/space/body.png",
+      "barrel": "cannons/space/barrel.png",
+      "bodyAnchor": [0.5, 1.0],
+      "barrelPivot": [0.15, 0.5],
+      "barrelMount": [5, -21],
+      "thumb": "cannons/space/thumb.png",
+      "damaged": "cannons/space/body-damaged.png",
+      "wreck": "cannons/space/wreck.png",
+      "muzzle": [0.99, 0.5]
+    },
+    "candy": {
+      "body": "cannons/candy/body.png",
+      "barrel": "cannons/candy/barrel.png",
+      "bodyAnchor": [0.5, 1.0],
+      "barrelPivot": [0.15, 0.5],
+      "barrelMount": [5, -21],
+      "thumb": "cannons/candy/thumb.png",
+      "damaged": "cannons/candy/body-damaged.png",
+      "wreck": "cannons/candy/wreck.png",
+      "muzzle": [0.99, 0.5]
     }
   },
   "fx": {
@@ -334,12 +389,22 @@
       "frames": {
         "default": "ui/profile/frame-default.png",
         "gold": "ui/profile/frame-gold.png",
-        "flame": "ui/profile/frame-flame.png"
+        "flame": "ui/profile/frame-flame.png",
+        "sky": "ui/profile/frame-sky.png",
+        "candy": "ui/profile/frame-candy.png"
       },
       "plates": {
         "default": "ui/profile/plate-default.png",
         "sky": "ui/profile/plate-sky.png",
-        "candy": "ui/profile/plate-candy.png"
+        "candy": "ui/profile/plate-candy.png",
+        "gold": "ui/profile/plate-gold.png",
+        "flame": "ui/profile/plate-flame.png"
+      },
+      "skins": {
+        "royal": { "frame": "gold", "plate": "gold" },
+        "blaze": { "frame": "flame", "plate": "flame" },
+        "skyline": { "frame": "sky", "plate": "sky" },
+        "sweet": { "frame": "candy", "plate": "candy" }
       },
       "badgeSlot": "ui/profile/badge-slot.png",
       "rankIcons": {
@@ -348,6 +413,12 @@
         "frameH": 96,
         "frames": 5
       }
+    },
+    "shop": {
+      "tile": { "src": "ui/shop/tile.png", "slice": 16, "width": 256, "height": 96 },
+      "coin": "ui/shop/coin.png",
+      "badgeOwned": "ui/shop/badge-owned.png",
+      "badgeEquipped": "ui/shop/badge-equipped.png"
     },
     "howto": {
       "touch": "ui/howto/touch.png",
