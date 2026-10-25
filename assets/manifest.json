@@ -400,6 +400,13 @@
         "gold": "ui/profile/plate-gold.png",
         "flame": "ui/profile/plate-flame.png"
       },
+      "plateTone": {
+        "candy": "light",
+        "sky": "light",
+        "gold": "dark",
+        "flame": "dark",
+        "default": "dark"
+      },
       "skins": {
         "royal": { "frame": "gold", "plate": "gold" },
         "blaze": { "frame": "flame", "plate": "flame" },
