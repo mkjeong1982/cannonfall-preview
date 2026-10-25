@@ -325,6 +325,19 @@
       "src": "ui/panel.png",
       "slice": 16
     },
+    "lobby": {
+      "logo": "ui/lobby/logo.png",
+      "logoShine": "ui/lobby/logo-shine.png",
+      "bgSky": "ui/lobby/bg-sky.png",
+      "bgFar": "ui/lobby/bg-far.png",
+      "bgCliffs": "ui/lobby/bg-cliffs.png",
+      "clouds": ["ui/lobby/cloud-1.png", "ui/lobby/cloud-2.png", "ui/lobby/cloud-3.png"],
+      "pedestal": "ui/lobby/pedestal.png",
+      "panelWood": { "src": "ui/lobby/panel-wood.png", "slice": 90, "width": 600, "height": 600 },
+      "ribbon": "ui/lobby/ribbon.png",
+      "medals": ["ui/lobby/medal-1.png", "ui/lobby/medal-2.png", "ui/lobby/medal-3.png"],
+      "btnPlay": ["ui/lobby/btn-play.png", "ui/lobby/btn-play-down.png"]
+    },
     "barFrame": {
       "src": "ui/bar-frame.png",
       "slice": 9,
