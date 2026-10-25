@@ -273,7 +273,13 @@
     "fireTrail": { "sheet": "fx/fire-trail.png", "frameW": 48, "frameH": 48, "frames": 6, "pixelRatio": 3 },
     "fireExplosion": { "sheet": "fx/fire-explosion.png", "frameW": 192, "frameH": 192, "frames": 8, "pixelRatio": 3 },
     "ember": { "sheet": "fx/ember.png", "frameW": 24, "frameH": 24, "frames": 3, "pixelRatio": 3 },
-    "scorch": { "src": "fx/scorch.png", "width": 128, "height": 128, "pixelRatio": 2 }
+    "scorch": { "src": "fx/scorch.png", "width": 128, "height": 128, "pixelRatio": 2 },
+    "premium": {
+      "sparkle": { "sheet": "fx/premium/sparkle.png", "frameW": 48, "frameH": 48, "frames": 6 },
+      "shine": "fx/premium/shine.png",
+      "starDust": { "sheet": "fx/premium/star-dust.png", "frameW": 24, "frameH": 24, "frames": 3 },
+      "emberSmall": "fx/premium/ember-small.png"
+    }
   },
   "scale": 3,
   "ui": {
@@ -391,29 +397,42 @@
         "gold": "ui/profile/frame-gold.png",
         "flame": "ui/profile/frame-flame.png",
         "sky": "ui/profile/frame-sky.png",
-        "candy": "ui/profile/frame-candy.png"
+        "candy": "ui/profile/frame-candy.png",
+        "bot": "ui/profile/frame-bot.png"
       },
       "plates": {
         "default": "ui/profile/plate-default.png",
         "sky": "ui/profile/plate-sky.png",
         "candy": "ui/profile/plate-candy.png",
         "gold": "ui/profile/plate-gold.png",
-        "flame": "ui/profile/plate-flame.png"
+        "flame": "ui/profile/plate-flame.png",
+        "bot": "ui/profile/plate-bot.png"
       },
       "plateTone": {
         "candy": "light",
         "sky": "light",
         "gold": "dark",
         "flame": "dark",
-        "default": "dark"
+        "default": "dark",
+        "bot": "dark"
       },
       "skins": {
         "royal": { "frame": "gold", "plate": "gold" },
         "blaze": { "frame": "flame", "plate": "flame" },
         "skyline": { "frame": "sky", "plate": "sky" },
-        "sweet": { "frame": "candy", "plate": "candy" }
+        "sweet": { "frame": "candy", "plate": "candy" },
+        "bot": { "frame": "bot", "plate": "bot" }
       },
       "badgeSlot": "ui/profile/badge-slot.png",
+      "botMark": "ui/profile/bot-mark.png",
+      "glowFrames": {
+        "gold": "ui/profile/glow-frame-gold.png",
+        "flame": "ui/profile/glow-frame-flame.png"
+      },
+      "glowCards": {
+        "gold": { "src": "ui/profile/glow-card-gold.png", "slice": 40, "width": 760, "height": 208 },
+        "flame": { "src": "ui/profile/glow-card-flame.png", "slice": 40, "width": 760, "height": 208 }
+      },
       "rankIcons": {
         "sheet": "ui/profile/rank-icons.png",
         "frameW": 96,
@@ -425,7 +444,14 @@
       "tile": { "src": "ui/shop/tile.png", "slice": 16, "width": 256, "height": 96 },
       "coin": "ui/shop/coin.png",
       "badgeOwned": "ui/shop/badge-owned.png",
-      "badgeEquipped": "ui/shop/badge-equipped.png"
+      "badgeEquipped": "ui/shop/badge-equipped.png",
+      "tierEpic": "ui/shop/tier-epic.png",
+      "tierLegendary": "ui/shop/tier-legendary.png",
+      "tileGlow": { "src": "ui/shop/tile-glow.png", "slice": 32, "width": 288, "height": 128 },
+      "tiers": {
+        "pirate": "common", "candy": "common", "robot": "rare", "space": "epic", "gold": "legendary",
+        "sweet": "common", "skyline": "rare", "blaze": "epic", "royal": "legendary"
+      }
     },
     "howto": {
       "touch": "ui/howto/touch.png",
