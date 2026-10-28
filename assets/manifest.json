@@ -1,40 +1,97 @@
 {
   "maps": {
     "green-canyon": {
-      "bg": "maps/green-canyon/bg.png",
-      "fallzone": "maps/green-canyon/fallzone.png",
+      "bg": "maps/green-canyon/bg.webp",
+      "fallzone": "maps/green-canyon/fallzone.webp",
       "palette": {
         "sky": "#A6D9EE",
-        "surface": "#75C65A",
-        "soil": "#B6784C",
-        "deep": "#86513B",
-        "outline": "#33453C",
-        "debris": "#AD7950"
+        "surface": "#72B756",
+        "soil": "#B8885B",
+        "deep": "#AB7954",
+        "outline": "#405348",
+        "debris": "#A77953"
       },
-      "style": "canyon",
-      "fill": "maps/green-canyon/fill.png",
-      "underside": "maps/green-canyon/underside.png",
+      "style": "floating",
+      "fill": "maps/green-canyon/fill.webp",
+      "underside": "maps/green-canyon/underside.webp",
       "chunks": {
-        "sheet": "maps/green-canyon/chunks.png",
+        "sheet": "maps/green-canyon/chunks.webp",
         "frameW": 96,
         "frameH": 96,
         "frames": 4
       },
       "fallFx": "splash",
-      "mid": "maps/green-canyon/mid.png",
-      "surface": "maps/green-canyon/surface.png",
+      "mid": "maps/green-canyon/mid.webp",
+      "surface": "maps/green-canyon/surface.webp",
       "decor": {
-        "sheet": "maps/green-canyon/decor.png",
+        "sheet": "maps/green-canyon/decor.webp",
         "frameW": 96,
         "frameH": 96,
         "frames": 6
       },
-      "rock": "maps/green-canyon/rock.png",
-      "rockTop": "maps/green-canyon/rock-top.png"
+      "rock": "maps/green-canyon/rock.webp",
+      "rockTop": "maps/green-canyon/rock-top.webp",
+      "far": "maps/green-canyon/far.webp",
+      "front": "maps/green-canyon/front.webp",
+      "hanging": "maps/green-canyon/hanging-edge.webp",
+      "particles": {
+        "sheet": "maps/green-canyon/ambient.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      },
+      "layers": {
+        "space": [
+          2880,
+          1068
+        ],
+        "items": [
+          {
+            "file": "maps/common/cloud-1.webp",
+            "x": 210,
+            "y": 220,
+            "parallax": 0.13,
+            "speedX": 5
+          },
+          {
+            "file": "maps/common/cloud-2.webp",
+            "x": 1860,
+            "y": 340,
+            "parallax": 0.21,
+            "speedX": -8
+          },
+          {
+            "file": "maps/common/cloud-3.webp",
+            "x": 2500,
+            "y": 150,
+            "parallax": 0.12,
+            "speedX": 6
+          },
+          {
+            "file": "maps/green-canyon/windmill-blades.webp",
+            "x": 298,
+            "y": 683,
+            "pivot": {
+              "x": 56,
+              "y": 56
+            },
+            "rotationDegPerSec": 38,
+            "layer": "mid"
+          },
+          {
+            "file": "maps/green-canyon/river-glint.webp",
+            "x": 1450,
+            "y": 935,
+            "layer": "water",
+            "speedX": 18,
+            "opacity": 0.4
+          }
+        ]
+      }
     },
     "sky-islands": {
-      "bg": "maps/sky-islands/bg.png",
-      "fallzone": "maps/sky-islands/fallzone.png",
+      "bg": "maps/sky-islands/bg.webp",
+      "fallzone": "maps/sky-islands/fallzone.webp",
       "palette": {
         "sky": "#DDF1F6",
         "surface": "#97CE80",
@@ -44,30 +101,86 @@
         "debris": "#99876E"
       },
       "style": "floating",
-      "fill": "maps/sky-islands/fill.png",
-      "underside": "maps/sky-islands/underside.png",
+      "fill": "maps/sky-islands/fill.webp",
+      "underside": "maps/sky-islands/underside.webp",
       "chunks": {
-        "sheet": "maps/sky-islands/chunks.png",
+        "sheet": "maps/sky-islands/chunks.webp",
         "frameW": 96,
         "frameH": 96,
         "frames": 4
       },
       "fallFx": "clouds",
-      "mid": "maps/sky-islands/mid.png",
-      "surface": "maps/sky-islands/surface.png",
+      "mid": "maps/sky-islands/mid.webp",
+      "surface": "maps/sky-islands/surface.webp",
       "decor": {
-        "sheet": "maps/sky-islands/decor.png",
+        "sheet": "maps/sky-islands/decor.webp",
         "frameW": 96,
         "frameH": 96,
         "frames": 6
       },
-      "rock": "maps/sky-islands/rock.png",
-      "rockTop": "maps/sky-islands/rock-top.png"
+      "rock": "maps/sky-islands/rock.webp",
+      "rockTop": "maps/sky-islands/rock-top.webp",
+      "far": "maps/sky-islands/far.webp",
+      "front": "maps/sky-islands/front.webp",
+      "hanging": "maps/sky-islands/hanging-edge.webp",
+      "layers": {
+        "space": [
+          2880,
+          1068
+        ],
+        "items": [
+          {
+            "file": "maps/sky-islands/float-isle-1.webp",
+            "x": 480,
+            "y": 590,
+            "layer": "far",
+            "bobPx": 7,
+            "bobPeriodSec": 4
+          },
+          {
+            "file": "maps/sky-islands/float-isle-2.webp",
+            "x": 1600,
+            "y": 465,
+            "layer": "far",
+            "bobPx": 7,
+            "bobPeriodSec": 5
+          },
+          {
+            "file": "maps/sky-islands/float-isle-3.webp",
+            "x": 2510,
+            "y": 600,
+            "layer": "far",
+            "bobPx": 7,
+            "bobPeriodSec": 6
+          },
+          {
+            "file": "maps/common/cloud-1.webp",
+            "x": 210,
+            "y": 220,
+            "parallax": 0.13,
+            "speedX": 5
+          },
+          {
+            "file": "maps/common/cloud-2.webp",
+            "x": 1860,
+            "y": 340,
+            "parallax": 0.21,
+            "speedX": -8
+          },
+          {
+            "file": "maps/common/cloud-3.webp",
+            "x": 2500,
+            "y": 150,
+            "parallax": 0.12,
+            "speedX": 6
+          }
+        ]
+      }
     },
     "moon-rocks": {
-      "bg": "maps/moon-rocks/bg.png",
-      "mid": "maps/moon-rocks/mid.png",
-      "fallzone": "maps/moon-rocks/fallzone.png",
+      "bg": "maps/moon-rocks/bg.webp",
+      "mid": "maps/moon-rocks/mid.webp",
+      "fallzone": "maps/moon-rocks/fallzone.webp",
       "palette": {
         "sky": "#596EC3",
         "surface": "#E5E3E8",
@@ -77,17 +190,56 @@
         "debris": "#B4B2CA"
       },
       "style": "floating",
-      "fill": "maps/moon-rocks/fill.png",
-      "underside": "maps/moon-rocks/underside.png",
-      "surface": "maps/moon-rocks/surface.png",
-      "decor": { "sheet": "maps/moon-rocks/decor.png", "frameW": 96, "frameH": 96, "frames": 6 },
-      "chunks": { "sheet": "maps/moon-rocks/chunks.png", "frameW": 96, "frameH": 96, "frames": 4 },
-      "fallFx": "void"
+      "fill": "maps/moon-rocks/fill.webp",
+      "underside": "maps/moon-rocks/underside.webp",
+      "surface": "maps/moon-rocks/surface.webp",
+      "decor": {
+        "sheet": "maps/moon-rocks/decor.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      },
+      "chunks": {
+        "sheet": "maps/moon-rocks/chunks.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "fallFx": "void",
+      "rock": "maps/moon-rocks/rock.webp",
+      "rockTop": "maps/moon-rocks/rock-top.webp",
+      "far": "maps/moon-rocks/far.webp",
+      "front": "maps/moon-rocks/front.webp",
+      "hanging": "maps/moon-rocks/hanging-edge.webp",
+      "layers": {
+        "space": [
+          2880,
+          1068
+        ],
+        "items": [
+          {
+            "file": "maps/moon-rocks/planet-ring.webp",
+            "x": 2490,
+            "y": 230,
+            "layer": "far",
+            "rotationDegPerSec": 0.35,
+            "opacity": 0.22
+          },
+          {
+            "file": "maps/moon-rocks/stars-twinkle.webp",
+            "x": 1400,
+            "y": 250,
+            "layer": "far",
+            "pulseSec": 2.4,
+            "opacity": 0.6
+          }
+        ]
+      }
     },
     "snow-fortress": {
-      "bg": "maps/snow-fortress/bg.png",
-      "mid": "maps/snow-fortress/mid.png",
-      "fallzone": "maps/snow-fortress/fallzone.png",
+      "bg": "maps/snow-fortress/bg.webp",
+      "mid": "maps/snow-fortress/mid.webp",
+      "fallzone": "maps/snow-fortress/fallzone.webp",
       "palette": {
         "sky": "#4B8FDC",
         "surface": "#F0F7F7",
@@ -97,17 +249,73 @@
         "debris": "#ACCCDF"
       },
       "style": "cliff",
-      "fill": "maps/snow-fortress/fill.png",
-      "underside": "maps/snow-fortress/underside.png",
-      "surface": "maps/snow-fortress/surface.png",
-      "decor": { "sheet": "maps/snow-fortress/decor.png", "frameW": 96, "frameH": 96, "frames": 6 },
-      "chunks": { "sheet": "maps/snow-fortress/chunks.png", "frameW": 96, "frameH": 96, "frames": 4 },
-      "fallFx": "ice"
+      "fill": "maps/snow-fortress/fill.webp",
+      "underside": "maps/snow-fortress/underside.webp",
+      "surface": "maps/snow-fortress/surface.webp",
+      "decor": {
+        "sheet": "maps/snow-fortress/decor.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      },
+      "chunks": {
+        "sheet": "maps/snow-fortress/chunks.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "fallFx": "ice",
+      "rock": "maps/snow-fortress/rock.webp",
+      "rockTop": "maps/snow-fortress/rock-top.webp",
+      "far": "maps/snow-fortress/far.webp",
+      "front": "maps/snow-fortress/front.webp",
+      "hanging": "maps/snow-fortress/hanging-edge.webp",
+      "layers": {
+        "space": [
+          2880,
+          1068
+        ],
+        "items": [
+          {
+            "file": "maps/snow-fortress/aurora.webp",
+            "x": 1400,
+            "y": 180,
+            "repeatX": true,
+            "layer": "far",
+            "speedX": 4,
+            "opacity": 0.48
+          },
+          {
+            "file": "maps/snow-fortress/cloud-1.webp",
+            "x": 210,
+            "y": 220,
+            "parallax": 0.13,
+            "speedX": 5,
+            "opacity": 0.38
+          },
+          {
+            "file": "maps/snow-fortress/cloud-2.webp",
+            "x": 1860,
+            "y": 340,
+            "parallax": 0.21,
+            "speedX": -8,
+            "opacity": 0.38
+          },
+          {
+            "file": "maps/snow-fortress/cloud-3.webp",
+            "x": 2500,
+            "y": 150,
+            "parallax": 0.12,
+            "speedX": 6,
+            "opacity": 0.38
+          }
+        ]
+      }
     },
     "desert-ruins": {
-      "bg": "maps/desert-ruins/bg.png",
-      "mid": "maps/desert-ruins/mid.png",
-      "fallzone": "maps/desert-ruins/fallzone.png",
+      "bg": "maps/desert-ruins/bg.webp",
+      "mid": "maps/desert-ruins/mid.webp",
+      "fallzone": "maps/desert-ruins/fallzone.webp",
       "palette": {
         "sky": "#67AFE4",
         "surface": "#F1C584",
@@ -117,138 +325,813 @@
         "debris": "#C7935E"
       },
       "style": "cliff",
-      "fill": "maps/desert-ruins/fill.png",
-      "underside": "maps/desert-ruins/underside.png",
-      "surface": "maps/desert-ruins/surface.png",
-      "decor": { "sheet": "maps/desert-ruins/decor.png", "frameW": 96, "frameH": 96, "frames": 6 },
-      "chunks": { "sheet": "maps/desert-ruins/chunks.png", "frameW": 96, "frameH": 96, "frames": 4 },
-      "fallFx": "quicksand"
+      "fill": "maps/desert-ruins/fill.webp",
+      "underside": "maps/desert-ruins/underside.webp",
+      "surface": "maps/desert-ruins/surface.webp",
+      "decor": {
+        "sheet": "maps/desert-ruins/decor.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      },
+      "chunks": {
+        "sheet": "maps/desert-ruins/chunks.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "fallFx": "quicksand",
+      "rock": "maps/desert-ruins/rock.webp",
+      "rockTop": "maps/desert-ruins/rock-top.webp",
+      "far": "maps/desert-ruins/far.webp",
+      "front": "maps/desert-ruins/front.webp",
+      "hanging": "maps/desert-ruins/hanging-edge.webp",
+      "layers": {
+        "space": [
+          2880,
+          1068
+        ],
+        "items": [
+          {
+            "file": "maps/desert-ruins/heat-haze.webp",
+            "x": 1500,
+            "y": 775,
+            "layer": "mid",
+            "speedX": 9,
+            "opacity": 0.45
+          },
+          {
+            "file": "maps/desert-ruins/cloud-1.webp",
+            "x": 210,
+            "y": 220,
+            "parallax": 0.13,
+            "speedX": 5,
+            "opacity": 0.65
+          },
+          {
+            "file": "maps/desert-ruins/cloud-2.webp",
+            "x": 1860,
+            "y": 340,
+            "parallax": 0.21,
+            "speedX": -8,
+            "opacity": 0.65
+          },
+          {
+            "file": "maps/desert-ruins/cloud-3.webp",
+            "x": 2500,
+            "y": 150,
+            "parallax": 0.12,
+            "speedX": 6,
+            "opacity": 0.65
+          }
+        ]
+      }
     }
   },
   "cannons": {
     "default-blue": {
-      "bodySheet": "cannons/boomer/body-sheet.png",
+      "bodySheet": "cannons/boomer/body-sheet.webp",
       "barrel": "cannons/boomer/barrel.png",
+      "mount": "cannons/boomer/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
       "bodyAnchor": [
         0.5,
         1.0
       ],
       "barrelPivot": [
-        0.15,
+        0.06,
         0.5
       ],
-      "barrelMount": [
-        5,
-        -21
-      ],
-      "thumb": "cannons/boomer/thumb.png",
-      "damaged": "cannons/boomer/body-damaged.png",
-      "wreck": "cannons/boomer/wreck.png",
+      "thumb": "cannons/boomer/thumb.webp",
+      "damaged": "cannons/boomer/body-damaged.webp",
+      "wreck": "cannons/boomer/wreck.webp",
       "muzzle": [
-        0.99,
-        0.5
-      ]
-    },
-    "grumbolt": {
-      "bodySheet": "cannons/grumbolt/body-sheet.png",
-      "barrel": "cannons/grumbolt/barrel.png",
-      "bodyAnchor": [
-        0.5,
-        1.0
-      ],
-      "barrelPivot": [
-        0.15,
-        0.5
-      ],
-      "barrelMount": [
-        5,
-        -21
-      ],
-      "thumb": "cannons/grumbolt/thumb.png",
-      "damaged": "cannons/grumbolt/body-damaged.png",
-      "wreck": "cannons/grumbolt/wreck.png",
-      "muzzle": [
-        0.99,
+        0.96,
         0.5
       ]
     },
     "default-red": {
-      "body": "cannons/default-red/body.png",
-      "barrel": "cannons/default-red/barrel.png",
+      "bodySheet": "cannons/boomer/body-sheet.webp",
+      "barrel": "cannons/boomer/barrel.png",
+      "mount": "cannons/boomer/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
       "bodyAnchor": [
         0.5,
         1.0
       ],
       "barrelPivot": [
-        0.15,
+        0.06,
         0.5
       ],
-      "barrelMount": [
-        5,
-        -21
-      ],
-      "thumb": "cannons/default-red/thumb.png",
-      "damaged": "cannons/default-red/body-damaged.png",
-      "wreck": "cannons/default-red/wreck.png",
+      "thumb": "cannons/boomer/thumb.webp",
+      "damaged": "cannons/boomer/body-damaged.webp",
+      "wreck": "cannons/boomer/wreck.webp",
       "muzzle": [
-        0.99,
+        0.96,
+        0.5
+      ]
+    },
+    "grumbolt": {
+      "bodySheet": "cannons/grumbolt/body-sheet.webp",
+      "barrel": "cannons/grumbolt/barrel.png",
+      "mount": "cannons/grumbolt/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/grumbolt/thumb.webp",
+      "damaged": "cannons/grumbolt/body-damaged.webp",
+      "wreck": "cannons/grumbolt/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "sandking": {
+      "bodySheet": "cannons/sandking/body-sheet.webp",
+      "barrel": "cannons/sandking/barrel.png",
+      "mount": "cannons/sandking/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/sandking/thumb.webp",
+      "damaged": "cannons/sandking/body-damaged.webp",
+      "wreck": "cannons/sandking/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "frostbite": {
+      "bodySheet": "cannons/frostbite/body-sheet.webp",
+      "barrel": "cannons/frostbite/barrel.png",
+      "mount": "cannons/frostbite/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/frostbite/thumb.webp",
+      "damaged": "cannons/frostbite/body-damaged.webp",
+      "wreck": "cannons/frostbite/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "robot": {
+      "bodySheet": "cannons/puffzilla/body-sheet.webp",
+      "barrel": "cannons/puffzilla/barrel.png",
+      "mount": "cannons/puffzilla/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/puffzilla/thumb.webp",
+      "damaged": "cannons/puffzilla/body-damaged.webp",
+      "wreck": "cannons/puffzilla/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "space": {
+      "bodySheet": "cannons/moonzor/body-sheet.webp",
+      "barrel": "cannons/moonzor/barrel.png",
+      "mount": "cannons/moonzor/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/moonzor/thumb.webp",
+      "damaged": "cannons/moonzor/body-damaged.webp",
+      "wreck": "cannons/moonzor/wreck.png",
+      "muzzle": [
+        0.96,
         0.5
       ]
     },
     "pirate": {
-      "body": "cannons/pirate/body.png",
-      "barrel": "cannons/pirate/barrel.png",
-      "bodyAnchor": [0.5, 1.0],
-      "barrelPivot": [0.15, 0.5],
-      "barrelMount": [5, -21],
-      "thumb": "cannons/pirate/thumb.png",
-      "damaged": "cannons/pirate/body-damaged.png",
-      "wreck": "cannons/pirate/wreck.png",
-      "muzzle": [0.99, 0.5]
-    },
-    "gold": {
-      "body": "cannons/gold/body.png",
-      "barrel": "cannons/gold/barrel.png",
-      "bodyAnchor": [0.5, 1.0],
-      "barrelPivot": [0.15, 0.5],
-      "barrelMount": [5, -21],
-      "thumb": "cannons/gold/thumb.png",
-      "damaged": "cannons/gold/body-damaged.png",
-      "wreck": "cannons/gold/wreck.png",
-      "muzzle": [0.99, 0.5]
-    },
-    "robot": {
-      "body": "cannons/robot/body.png",
-      "barrel": "cannons/robot/barrel.png",
-      "bodyAnchor": [0.5, 1.0],
-      "barrelPivot": [0.15, 0.5],
-      "barrelMount": [5, -21],
-      "thumb": "cannons/robot/thumb.png",
-      "damaged": "cannons/robot/body-damaged.png",
-      "wreck": "cannons/robot/wreck.png",
-      "muzzle": [0.99, 0.5]
-    },
-    "space": {
-      "body": "cannons/space/body.png",
-      "barrel": "cannons/space/barrel.png",
-      "bodyAnchor": [0.5, 1.0],
-      "barrelPivot": [0.15, 0.5],
-      "barrelMount": [5, -21],
-      "thumb": "cannons/space/thumb.png",
-      "damaged": "cannons/space/body-damaged.png",
-      "wreck": "cannons/space/wreck.png",
-      "muzzle": [0.99, 0.5]
+      "bodySheet": "cannons/kaboom/body-sheet.webp",
+      "barrel": "cannons/kaboom/barrel.png",
+      "mount": "cannons/kaboom/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/kaboom/thumb.webp",
+      "damaged": "cannons/kaboom/body-damaged.webp",
+      "wreck": "cannons/kaboom/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
     },
     "candy": {
-      "body": "cannons/candy/body.png",
-      "barrel": "cannons/candy/barrel.png",
-      "bodyAnchor": [0.5, 1.0],
-      "barrelPivot": [0.15, 0.5],
-      "barrelMount": [5, -21],
-      "thumb": "cannons/candy/thumb.png",
-      "damaged": "cannons/candy/body-damaged.png",
-      "wreck": "cannons/candy/wreck.png",
-      "muzzle": [0.99, 0.5]
+      "bodySheet": "cannons/gummy/body-sheet.webp",
+      "barrel": "cannons/gummy/barrel.png",
+      "mount": "cannons/gummy/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/gummy/thumb.webp",
+      "damaged": "cannons/gummy/body-damaged.webp",
+      "wreck": "cannons/gummy/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "shellby": {
+      "bodySheet": "cannons/shellby/body-sheet.webp",
+      "barrel": "cannons/shellby/barrel.png",
+      "mount": "cannons/shellby/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/shellby/thumb.webp",
+      "damaged": "cannons/shellby/body-damaged.webp",
+      "wreck": "cannons/shellby/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "gold": {
+      "bodySheet": "cannons/hornster/body-sheet.webp",
+      "barrel": "cannons/hornster/barrel.png",
+      "mount": "cannons/hornster/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/hornster/thumb.webp",
+      "damaged": "cannons/hornster/body-damaged.webp",
+      "wreck": "cannons/hornster/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "default-blue@ice-blue": {
+      "bodySheet": "skins/boomer/ice-blue/body-sheet.webp",
+      "barrel": "skins/boomer/ice-blue/barrel.png",
+      "mount": "skins/boomer/ice-blue/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/boomer/ice-blue/thumb.webp",
+      "damaged": "skins/boomer/ice-blue/body-damaged.webp",
+      "wreck": "skins/boomer/ice-blue/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "default-blue@space-ranger": {
+      "bodySheet": "skins/boomer/space-ranger/body-sheet.webp",
+      "barrel": "skins/boomer/space-ranger/barrel.png",
+      "mount": "skins/boomer/space-ranger/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/boomer/space-ranger/thumb.webp",
+      "damaged": "skins/boomer/space-ranger/body-damaged.webp",
+      "wreck": "skins/boomer/space-ranger/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "grumbolt@lava-armor": {
+      "bodySheet": "skins/grumbolt/lava-armor/body-sheet.webp",
+      "barrel": "skins/grumbolt/lava-armor/barrel.png",
+      "mount": "skins/grumbolt/lava-armor/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/grumbolt/lava-armor/thumb.webp",
+      "damaged": "skins/grumbolt/lava-armor/body-damaged.webp",
+      "wreck": "skins/grumbolt/lava-armor/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "grumbolt@iron-commander": {
+      "bodySheet": "skins/grumbolt/iron-commander/body-sheet.webp",
+      "barrel": "skins/grumbolt/iron-commander/barrel.png",
+      "mount": "skins/grumbolt/iron-commander/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/grumbolt/iron-commander/thumb.webp",
+      "damaged": "skins/grumbolt/iron-commander/body-damaged.webp",
+      "wreck": "skins/grumbolt/iron-commander/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "shellby@coral-reef": {
+      "bodySheet": "skins/shellby/coral-reef/body-sheet.webp",
+      "barrel": "skins/shellby/coral-reef/barrel.png",
+      "mount": "skins/shellby/coral-reef/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/shellby/coral-reef/thumb.webp",
+      "damaged": "skins/shellby/coral-reef/body-damaged.webp",
+      "wreck": "skins/shellby/coral-reef/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "shellby@jungle-guardian": {
+      "bodySheet": "skins/shellby/jungle-guardian/body-sheet.webp",
+      "barrel": "skins/shellby/jungle-guardian/barrel.png",
+      "mount": "skins/shellby/jungle-guardian/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/shellby/jungle-guardian/thumb.webp",
+      "damaged": "skins/shellby/jungle-guardian/body-damaged.webp",
+      "wreck": "skins/shellby/jungle-guardian/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "frostbite@arctic-sunrise": {
+      "bodySheet": "skins/frostbite/arctic-sunrise/body-sheet.webp",
+      "barrel": "skins/frostbite/arctic-sunrise/barrel.png",
+      "mount": "skins/frostbite/arctic-sunrise/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/frostbite/arctic-sunrise/thumb.webp",
+      "damaged": "skins/frostbite/arctic-sunrise/body-damaged.webp",
+      "wreck": "skins/frostbite/arctic-sunrise/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "frostbite@aurora-knight": {
+      "bodySheet": "skins/frostbite/aurora-knight/body-sheet.webp",
+      "barrel": "skins/frostbite/aurora-knight/barrel.png",
+      "mount": "skins/frostbite/aurora-knight/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/frostbite/aurora-knight/thumb.webp",
+      "damaged": "skins/frostbite/aurora-knight/body-damaged.webp",
+      "wreck": "skins/frostbite/aurora-knight/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "candy@lime-jelly": {
+      "bodySheet": "skins/gummy/lime-jelly/body-sheet.webp",
+      "barrel": "skins/gummy/lime-jelly/barrel.png",
+      "mount": "skins/gummy/lime-jelly/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/gummy/lime-jelly/thumb.webp",
+      "damaged": "skins/gummy/lime-jelly/body-damaged.webp",
+      "wreck": "skins/gummy/lime-jelly/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "candy@halloween-glow": {
+      "bodySheet": "skins/gummy/halloween-glow/body-sheet.webp",
+      "barrel": "skins/gummy/halloween-glow/barrel.png",
+      "mount": "skins/gummy/halloween-glow/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/gummy/halloween-glow/thumb.webp",
+      "damaged": "skins/gummy/halloween-glow/body-damaged.webp",
+      "wreck": "skins/gummy/halloween-glow/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "space@cosmic-mint": {
+      "bodySheet": "skins/moonzor/cosmic-mint/body-sheet.webp",
+      "barrel": "skins/moonzor/cosmic-mint/barrel.png",
+      "mount": "skins/moonzor/cosmic-mint/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/moonzor/cosmic-mint/thumb.webp",
+      "damaged": "skins/moonzor/cosmic-mint/body-damaged.webp",
+      "wreck": "skins/moonzor/cosmic-mint/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "space@nebula-pilot": {
+      "bodySheet": "skins/moonzor/nebula-pilot/body-sheet.webp",
+      "barrel": "skins/moonzor/nebula-pilot/barrel.png",
+      "mount": "skins/moonzor/nebula-pilot/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/moonzor/nebula-pilot/thumb.webp",
+      "damaged": "skins/moonzor/nebula-pilot/body-damaged.webp",
+      "wreck": "skins/moonzor/nebula-pilot/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "robot@raspberry-pop": {
+      "bodySheet": "skins/puffzilla/raspberry-pop/body-sheet.webp",
+      "barrel": "skins/puffzilla/raspberry-pop/barrel.png",
+      "mount": "skins/puffzilla/raspberry-pop/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/puffzilla/raspberry-pop/thumb.webp",
+      "damaged": "skins/puffzilla/raspberry-pop/body-damaged.webp",
+      "wreck": "skins/puffzilla/raspberry-pop/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "robot@cloud-parade": {
+      "bodySheet": "skins/puffzilla/cloud-parade/body-sheet.webp",
+      "barrel": "skins/puffzilla/cloud-parade/barrel.png",
+      "mount": "skins/puffzilla/cloud-parade/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/puffzilla/cloud-parade/thumb.webp",
+      "damaged": "skins/puffzilla/cloud-parade/body-damaged.webp",
+      "wreck": "skins/puffzilla/cloud-parade/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "pirate@brass-corsair": {
+      "bodySheet": "skins/kaboom/brass-corsair/body-sheet.webp",
+      "barrel": "skins/kaboom/brass-corsair/barrel.png",
+      "mount": "skins/kaboom/brass-corsair/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/kaboom/brass-corsair/thumb.webp",
+      "damaged": "skins/kaboom/brass-corsair/body-damaged.webp",
+      "wreck": "skins/kaboom/brass-corsair/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "pirate@ghost-ship": {
+      "bodySheet": "skins/kaboom/ghost-ship/body-sheet.webp",
+      "barrel": "skins/kaboom/ghost-ship/barrel.png",
+      "mount": "skins/kaboom/ghost-ship/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/kaboom/ghost-ship/thumb.webp",
+      "damaged": "skins/kaboom/ghost-ship/body-damaged.webp",
+      "wreck": "skins/kaboom/ghost-ship/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "sandking@sapphire-dune": {
+      "bodySheet": "skins/sandking/sapphire-dune/body-sheet.webp",
+      "barrel": "skins/sandking/sapphire-dune/barrel.png",
+      "mount": "skins/sandking/sapphire-dune/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/sandking/sapphire-dune/thumb.webp",
+      "damaged": "skins/sandking/sapphire-dune/body-damaged.webp",
+      "wreck": "skins/sandking/sapphire-dune/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "sandking@sun-pharaoh": {
+      "bodySheet": "skins/sandking/sun-pharaoh/body-sheet.webp",
+      "barrel": "skins/sandking/sun-pharaoh/barrel.png",
+      "mount": "skins/sandking/sun-pharaoh/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/sandking/sun-pharaoh/thumb.webp",
+      "damaged": "skins/sandking/sun-pharaoh/body-damaged.webp",
+      "wreck": "skins/sandking/sun-pharaoh/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "gold@storm-bull": {
+      "bodySheet": "skins/hornster/storm-bull/body-sheet.webp",
+      "barrel": "skins/hornster/storm-bull/barrel.png",
+      "mount": "skins/hornster/storm-bull/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/hornster/storm-bull/thumb.webp",
+      "damaged": "skins/hornster/storm-bull/body-damaged.webp",
+      "wreck": "skins/hornster/storm-bull/wreck.webp",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
+    },
+    "gold@royal-champion": {
+      "bodySheet": "skins/hornster/royal-champion/body-sheet.webp",
+      "barrel": "skins/hornster/royal-champion/barrel.png",
+      "mount": "skins/hornster/royal-champion/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "skins/hornster/royal-champion/thumb.webp",
+      "damaged": "skins/hornster/royal-champion/body-damaged.webp",
+      "wreck": "skins/hornster/royal-champion/wreck.png",
+      "muzzle": [
+        0.96,
+        0.5
+      ]
     }
   },
   "fx": {
@@ -272,35 +1155,74 @@
       "frames": 4
     },
     "veil": {
-      "split": "fx/veil-split.png",
-      "big": "fx/veil-big.png",
-      "reverse": "fx/veil-reverse.png",
+      "split": "fx/veil-split.webp",
+      "big": "fx/veil-big.webp",
+      "reverse": "fx/veil-reverse.webp",
       "frameW": 120,
       "frameH": 720,
       "frames": 4,
       "capSlice": 20
     },
     "veilIcons": {
-      "sheet": "fx/veil-icons.png",
+      "sheet": "fx/veil-icons.webp",
       "frameW": 144,
       "frameH": 144,
       "frames": 3
     },
     "veilBurst": {
-      "sheet": "fx/veil-burst.png",
+      "sheet": "fx/veil-burst.webp",
       "frameW": 144,
       "frameH": 144,
       "frames": 4
     },
-    "fireBall": { "sheet": "fx/fire-ball.png", "frameW": 30, "frameH": 30, "frames": 4, "pixelRatio": 3 },
-    "fireTrail": { "sheet": "fx/fire-trail.png", "frameW": 48, "frameH": 48, "frames": 6, "pixelRatio": 3 },
-    "fireExplosion": { "sheet": "fx/fire-explosion.png", "frameW": 192, "frameH": 192, "frames": 8, "pixelRatio": 3 },
-    "ember": { "sheet": "fx/ember.png", "frameW": 24, "frameH": 24, "frames": 3, "pixelRatio": 3 },
-    "scorch": { "src": "fx/scorch.png", "width": 128, "height": 128, "pixelRatio": 2 },
+    "fireBall": {
+      "sheet": "fx/fire-ball.png",
+      "frameW": 30,
+      "frameH": 30,
+      "frames": 4,
+      "pixelRatio": 3
+    },
+    "fireTrail": {
+      "sheet": "fx/fire-trail.png",
+      "frameW": 48,
+      "frameH": 48,
+      "frames": 6,
+      "pixelRatio": 3
+    },
+    "fireExplosion": {
+      "sheet": "fx/fire-explosion.webp",
+      "frameW": 192,
+      "frameH": 192,
+      "frames": 8,
+      "pixelRatio": 3
+    },
+    "ember": {
+      "sheet": "fx/ember.png",
+      "frameW": 24,
+      "frameH": 24,
+      "frames": 3,
+      "pixelRatio": 3
+    },
+    "scorch": {
+      "src": "fx/scorch.png",
+      "width": 128,
+      "height": 128,
+      "pixelRatio": 2
+    },
     "premium": {
-      "sparkle": { "sheet": "fx/premium/sparkle.png", "frameW": 48, "frameH": 48, "frames": 6 },
+      "sparkle": {
+        "sheet": "fx/premium/sparkle.png",
+        "frameW": 48,
+        "frameH": 48,
+        "frames": 6
+      },
       "shine": "fx/premium/shine.png",
-      "starDust": { "sheet": "fx/premium/star-dust.png", "frameW": 24, "frameH": 24, "frames": 3 },
+      "starDust": {
+        "sheet": "fx/premium/star-dust.png",
+        "frameW": 24,
+        "frameH": 24,
+        "frames": 3
+      },
       "emberSmall": "fx/premium/ember-small.png"
     }
   },
@@ -349,17 +1271,12 @@
       "slice": 16
     },
     "lobby": {
-      "logo": "ui/lobby/logo.png",
-      "logoShine": "ui/lobby/logo-shine.png",
-      "bgSky": "ui/lobby/bg-sky.png",
-      "bgFar": "ui/lobby/bg-far.png",
-      "bgCliffs": "ui/lobby/bg-cliffs.png",
-      "clouds": ["ui/lobby/cloud-1.png", "ui/lobby/cloud-2.png", "ui/lobby/cloud-3.png"],
-      "pedestal": "ui/lobby/pedestal.png",
-      "panelWood": { "src": "ui/lobby/panel-wood.png", "slice": 90, "width": 600, "height": 600 },
-      "ribbon": "ui/lobby/ribbon.png",
-      "medals": ["ui/lobby/medal-1.png", "ui/lobby/medal-2.png", "ui/lobby/medal-3.png"],
-      "btnPlay": ["ui/lobby/btn-play.png", "ui/lobby/btn-play-down.png"]
+      "ribbon": "ui/lobby/ribbon.webp",
+      "medals": [
+        "ui/lobby/medal-1.png",
+        "ui/lobby/medal-2.png",
+        "ui/lobby/medal-3.png"
+      ]
     },
     "barFrame": {
       "src": "ui/bar-frame.png",
@@ -375,8 +1292,16 @@
       "height": 42,
       "pixelRatio": 3,
       "tints": {
-        "power": ["#FFD35D", "#F99C48", "#EC625C"],
-        "hp": ["#52DA78", "#F4CF60", "#ED6565"]
+        "power": [
+          "#FFD35D",
+          "#F99C48",
+          "#EC625C"
+        ],
+        "hp": [
+          "#52DA78",
+          "#F4CF60",
+          "#ED6565"
+        ]
       }
     },
     "topbar": {
@@ -392,57 +1317,137 @@
     },
     "labelTags": {
       "pixelRatio": 2,
-      "displaySize": [88, 20],
+      "displaySize": [
+        88,
+        20
+      ],
       "dockOverlap": 9,
       "fontSize": 13,
-      "textBounds": [27, 2, 55, 16],
-      "power": { "src": "ui/label-power.png", "width": 176, "height": 40 },
-      "hp": { "src": "ui/label-hp.png", "width": 176, "height": 40 }
+      "textBounds": [
+        27,
+        2,
+        55,
+        16
+      ],
+      "power": {
+        "src": "ui/label-power.png",
+        "width": 176,
+        "height": 40
+      },
+      "hp": {
+        "src": "ui/label-hp.png",
+        "width": 176,
+        "height": 40
+      }
     },
     "reloadDial": {
       "pixelRatio": 2,
-      "displaySize": [72, 72],
-      "base": { "src": "ui/reload/dial-base.png", "width": 144, "height": 144 },
-      "ring": { "src": "ui/reload/dial-ring.png", "width": 144, "height": 144 },
-      "ready": { "src": "ui/reload/dial-ready.png", "width": 144, "height": 144 },
-      "shellIcon": { "src": "ui/reload/shell-icon.png", "width": 48, "height": 48 },
-      "shellBounds": [24, 16, 24, 24],
-      "numberBounds": [17, 40, 38, 20],
-      "tints": { "loadingStart": "#8E9EAA", "loadingEnd": "#F9AD53", "ready": "#66EE9A" },
-      "sweep": { "center": [36, 36], "outerRadius": 32, "innerRadius": 24, "startAngle": -90, "clockwise": true }
+      "displaySize": [
+        72,
+        72
+      ],
+      "base": {
+        "src": "ui/reload/dial-base.png",
+        "width": 144,
+        "height": 144
+      },
+      "ring": {
+        "src": "ui/reload/dial-ring.png",
+        "width": 144,
+        "height": 144
+      },
+      "ready": {
+        "src": "ui/reload/dial-ready.png",
+        "width": 144,
+        "height": 144
+      },
+      "shellIcon": {
+        "src": "ui/reload/shell-icon.png",
+        "width": 48,
+        "height": 48
+      },
+      "shellBounds": [
+        24,
+        16,
+        24,
+        24
+      ],
+      "numberBounds": [
+        17,
+        40,
+        38,
+        20
+      ],
+      "tints": {
+        "loadingStart": "#8E9EAA",
+        "loadingEnd": "#F9AD53",
+        "ready": "#66EE9A"
+      },
+      "sweep": {
+        "center": [
+          36,
+          36
+        ],
+        "outerRadius": 32,
+        "innerRadius": 24,
+        "startAngle": -90,
+        "clockwise": true
+      }
     },
     "reloadBox": {
       "src": "ui/reload-box.png",
       "slice": 13
     },
     "reload": {
-      "rail": "ui/reload/rail.png",
+      "rail": "ui/reload/rail.webp",
       "ball": "ui/reload/ball.png",
-      "load": { "sheet": "ui/reload/load.png", "frameW": 450, "frameH": 192, "frames": 6 },
-      "ready": { "sheet": "ui/reload/ready.png", "frameW": 450, "frameH": 192, "frames": 4 },
-      "trackFill": { "src": "ui/reload/track-fill.png", "slice": 4 },
-      "path": [[24, 25], [107, 29]]
+      "load": {
+        "sheet": "ui/reload/load.webp",
+        "frameW": 450,
+        "frameH": 192,
+        "frames": 6
+      },
+      "ready": {
+        "sheet": "ui/reload/ready.webp",
+        "frameW": 450,
+        "frameH": 192,
+        "frames": 4
+      },
+      "trackFill": {
+        "src": "ui/reload/track-fill.png",
+        "slice": 4
+      },
+      "path": [
+        [
+          24,
+          25
+        ],
+        [
+          107,
+          29
+        ]
+      ]
     },
     "profile": {
       "cardBase": {
-        "src": "ui/profile/card-base.png",
+        "src": "ui/profile/card-base.webp",
         "slice": 20
       },
       "frames": {
         "default": "ui/profile/frame-default.png",
         "gold": "ui/profile/frame-gold.png",
         "flame": "ui/profile/frame-flame.png",
-        "sky": "ui/profile/frame-sky.png",
-        "candy": "ui/profile/frame-candy.png",
+        "sky": "ui/profile/frame-sky.webp",
+        "candy": "ui/profile/frame-candy.webp",
         "bot": "ui/profile/frame-bot.png"
       },
       "plates": {
-        "default": "ui/profile/plate-default.png",
-        "sky": "ui/profile/plate-sky.png",
-        "candy": "ui/profile/plate-candy.png",
-        "gold": "ui/profile/plate-gold.png",
-        "flame": "ui/profile/plate-flame.png",
-        "bot": "ui/profile/plate-bot.png"
+        "default": "ui/profile/plate-default.webp",
+        "sky": "ui/profile/plate-sky.webp",
+        "candy": "ui/profile/plate-candy.webp",
+        "gold": "ui/profile/plate-gold.webp",
+        "flame": "ui/profile/plate-flame.webp",
+        "bot": "ui/profile/plate-bot.webp"
       },
       "plateTone": {
         "candy": "light",
@@ -453,11 +1458,26 @@
         "bot": "dark"
       },
       "skins": {
-        "royal": { "frame": "gold", "plate": "gold" },
-        "blaze": { "frame": "flame", "plate": "flame" },
-        "skyline": { "frame": "sky", "plate": "sky" },
-        "sweet": { "frame": "candy", "plate": "candy" },
-        "bot": { "frame": "bot", "plate": "bot" }
+        "royal": {
+          "frame": "gold",
+          "plate": "gold"
+        },
+        "blaze": {
+          "frame": "flame",
+          "plate": "flame"
+        },
+        "skyline": {
+          "frame": "sky",
+          "plate": "sky"
+        },
+        "sweet": {
+          "frame": "candy",
+          "plate": "candy"
+        },
+        "bot": {
+          "frame": "bot",
+          "plate": "bot"
+        }
       },
       "badgeSlot": "ui/profile/badge-slot.png",
       "botMark": "ui/profile/bot-mark.png",
@@ -466,37 +1486,173 @@
         "flame": "ui/profile/glow-frame-flame.png"
       },
       "glowCards": {
-        "gold": { "src": "ui/profile/glow-card-gold.png", "slice": 40, "width": 760, "height": 208 },
-        "flame": { "src": "ui/profile/glow-card-flame.png", "slice": 40, "width": 760, "height": 208 }
+        "gold": {
+          "src": "ui/profile/glow-card-gold.png",
+          "slice": 40,
+          "width": 760,
+          "height": 208
+        },
+        "flame": {
+          "src": "ui/profile/glow-card-flame.png",
+          "slice": 40,
+          "width": 760,
+          "height": 208
+        }
       },
       "rankIcons": {
-        "sheet": "ui/profile/rank-icons.png",
+        "sheet": "ui/profile/rank-icons.webp",
         "frameW": 96,
         "frameH": 96,
         "frames": 5
       }
     },
     "shop": {
-      "tile": { "src": "ui/shop/tile.png", "slice": 16, "width": 256, "height": 96 },
+      "tile": {
+        "src": "ui/shop/tile.png",
+        "slice": 16,
+        "width": 256,
+        "height": 96
+      },
       "coin": "ui/shop/coin.png",
       "badgeOwned": "ui/shop/badge-owned.png",
       "badgeEquipped": "ui/shop/badge-equipped.png",
       "tierEpic": "ui/shop/tier-epic.png",
       "tierLegendary": "ui/shop/tier-legendary.png",
-      "tileGlow": { "src": "ui/shop/tile-glow.png", "slice": 32, "width": 288, "height": 128 },
+      "tileGlow": {
+        "src": "ui/shop/tile-glow.png",
+        "slice": 32,
+        "width": 288,
+        "height": 128
+      },
       "tiers": {
-        "pirate": "common", "candy": "common", "robot": "rare", "space": "epic", "gold": "legendary",
-        "sweet": "common", "skyline": "rare", "blaze": "epic", "royal": "legendary"
+        "pirate": "common",
+        "candy": "common",
+        "robot": "rare",
+        "space": "epic",
+        "gold": "legendary",
+        "sweet": "common",
+        "skyline": "rare",
+        "blaze": "epic",
+        "royal": "legendary"
       }
     },
     "howto": {
-      "touch": "ui/howto/touch.png",
-      "mouse": "ui/howto/mouse.png",
-      "keyboard": "ui/howto/keyboard.png",
-      "goal": "ui/howto/goal.png",
-      "veils": "ui/howto/veils.png",
-      "maps": "ui/howto/maps.png",
+      "touch": "ui/howto/touch.webp",
+      "mouse": "ui/howto/mouse.webp",
+      "keyboard": "ui/howto/keyboard.webp",
+      "goal": "ui/howto/goal.webp",
+      "veils": "ui/howto/veils.webp",
+      "maps": "ui/howto/maps.webp",
       "frameH": 270
+    },
+    "aimBubble": "ui/aim-bubble.webp",
+    "tutorial": {
+      "hand": "ui/tutorial/hand.webp",
+      "hand-press": "ui/tutorial/hand-press.webp",
+      "ring": "ui/tutorial/ring.webp",
+      "tap": "ui/tutorial/tap-ripple.webp",
+      "veil-split": "ui/tutorial/veil-split.webp",
+      "veil-fire": "ui/tutorial/veil-fire.webp",
+      "veil-bounce": "ui/tutorial/veil-bounce.webp"
+    },
+    "tutorialTip": {
+      "hand": [
+        0.5547,
+        0.0254
+      ]
     }
+  },
+  "bosses": {
+    "grumbolt": "bosses/grumbolt-portrait.webp",
+    "sandking": "bosses/sandking-portrait.webp",
+    "frostbite": "bosses/frostbite-portrait.webp",
+    "puffzilla": "bosses/puffzilla-portrait.webp",
+    "moonzor": "bosses/moonzor-portrait.webp"
+  },
+  "upgrades": {
+    "armor-plate-1": "upgrades/armor-plate-1.png",
+    "armor-plate-2": "upgrades/armor-plate-2.png",
+    "armor-plate-3": "upgrades/armor-plate-3.png",
+    "ammo-box": "upgrades/ammo-box.png",
+    "gear": "upgrades/gear.png",
+    "autoloader": "upgrades/autoloader.png",
+    "muzzle-ring-bronze": "upgrades/muzzle-ring-bronze.png",
+    "muzzle-ring-silver": "upgrades/muzzle-ring-silver.png",
+    "muzzle-ring-gold": "upgrades/muzzle-ring-gold.png",
+    "ember-sheet": {
+      "sheet": "upgrades/ember-sheet.webp",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 8
+    },
+    "flame-aura-sheet": {
+      "sheet": "upgrades/flame-aura-sheet.webp",
+      "frameW": 144,
+      "frameH": 144,
+      "frames": 8
+    }
+  },
+  "lobby2": {
+    "bg-far": "lobby2/bg-far.webp",
+    "bg-near": "lobby2/bg-near.webp",
+    "float-rocks": "lobby2/float-rocks.webp",
+    "planet-ring": "lobby2/planet-ring.webp",
+    "stars-twinkle": "lobby2/stars-twinkle.webp",
+    "btn-adventure": "lobby2/btn-adventure.webp",
+    "btn-adventure-down": "lobby2/btn-adventure-down.webp",
+    "btn-online": "lobby2/btn-online.webp",
+    "btn-online-down": "lobby2/btn-online-down.webp",
+    "btn-round": "lobby2/btn-round.webp",
+    "btn-round-down": "lobby2/btn-round-down.webp",
+    "btn-small": "lobby2/btn-small.webp",
+    "btn-small-down": "lobby2/btn-small-down.webp",
+    "char-shadow": "lobby2/char-shadow.webp",
+    "icon-shop": "lobby2/icon-shop.webp",
+    "icon-upgrades": "lobby2/icon-upgrades.webp",
+    "panel": "lobby2/panel.webp",
+    "pedestal": "lobby2/pedestal.webp",
+    "bg-sky": "lobby2/bg-sky.webp"
+  },
+  "lobbyLayout": "lobby2/layout.json",
+  "lobby2PanelSlice": 78,
+  "title": {
+    "bg-sky": "title/bg-sky.webp",
+    "bg-land": "title/bg-land.webp",
+    "characters": "title/characters.webp",
+    "logo": "title/logo.webp",
+    "logo-shine": "title/logo-shine.png"
+  },
+  "adventure": {
+    "badge-boss": "adventure/badge-boss.webp",
+    "badge-lock": "adventure/badge-lock.webp",
+    "banner-new-galaxy": "adventure/banner-new-galaxy.webp",
+    "banner-run-over": "adventure/banner-run-over.webp",
+    "banner-wave-clear": "adventure/banner-wave-clear.webp",
+    "card": "adventure/card.webp",
+    "gem": "adventure/gem.webp",
+    "icon-armor": "adventure/icon-armor.webp",
+    "icon-blast": "adventure/icon-blast.webp",
+    "icon-power": "adventure/icon-power.webp",
+    "icon-reload": "adventure/icon-reload.webp",
+    "icon-shell-big": "adventure/icon-shell-big.webp",
+    "icon-shell-bounce": "adventure/icon-shell-bounce.webp",
+    "icon-shell-delay": "adventure/icon-shell-delay.webp",
+    "icon-shell-drill": "adventure/icon-shell-drill.webp",
+    "icon-shell-freeze": "adventure/icon-shell-freeze.webp",
+    "icon-shell-guard": "adventure/icon-shell-guard.webp",
+    "icon-shell-split": "adventure/icon-shell-split.webp",
+    "icon-shell-standard": "adventure/icon-shell-standard.webp",
+    "icon-shell-sticky": "adventure/icon-shell-sticky.webp",
+    "region-desert-ruins": "adventure/region-desert-ruins.webp",
+    "region-green-canyon": "adventure/region-green-canyon.webp",
+    "region-moon-rocks": "adventure/region-moon-rocks.webp",
+    "region-sky-islands": "adventure/region-sky-islands.webp",
+    "region-snow-fortress": "adventure/region-snow-fortress.webp",
+    "region-thumb-desert-ruins": "adventure/region-thumb-desert-ruins.webp",
+    "region-thumb-green-canyon": "adventure/region-thumb-green-canyon.webp",
+    "region-thumb-moon-rocks": "adventure/region-thumb-moon-rocks.webp",
+    "region-thumb-sky-islands": "adventure/region-thumb-sky-islands.webp",
+    "region-thumb-snow-fortress": "adventure/region-thumb-snow-fortress.webp",
+    "travel-boomer": "adventure/travel-boomer.webp"
   }
 }

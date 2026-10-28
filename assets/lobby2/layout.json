@@ -1,0 +1,94 @@
+{
+  "desktop1280x720": {
+    "centerX": 640,
+    "pedestalBox": [
+      425,
+      395,
+      430,
+      144
+    ],
+    "characterFootBaselineY": 463,
+    "characterBox": [
+      500,
+      316,
+      280,
+      147
+    ],
+    "shadowBox": [
+      525,
+      438,
+      230,
+      44
+    ],
+    "shopCenter": [
+      376,
+      453
+    ],
+    "upgradesCenter": [
+      904,
+      453
+    ],
+    "roundDiameter": 100,
+    "adventureBox": [
+      420,
+      553,
+      440,
+      77
+    ],
+    "onlineBox": [
+      530,
+      644,
+      220,
+      61
+    ],
+    "reservedAdBox": [
+      960,
+      450,
+      320,
+      270
+    ]
+  },
+  "mobile844x390": {
+    "centerX": 422,
+    "pedestalBox": [
+      292,
+      207,
+      260,
+      88
+    ],
+    "characterFootBaselineY": 257,
+    "characterBox": [
+      333,
+      165,
+      178,
+      92
+    ],
+    "shadowBox": [
+      348,
+      241,
+      148,
+      29
+    ],
+    "shopCenter": [
+      246,
+      248
+    ],
+    "upgradesCenter": [
+      598,
+      248
+    ],
+    "roundDiameter": 68,
+    "adventureBox": [
+      266,
+      296,
+      312,
+      50
+    ],
+    "onlineBox": [
+      342,
+      351,
+      160,
+      36
+    ]
+  }
+}
