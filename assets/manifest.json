@@ -87,6 +87,12 @@
             "opacity": 0.4
           }
         ]
+      },
+      "birds": {
+        "sheet": "maps/green-canyon/bird-sheet.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
       }
     },
     "sky-islands": {
