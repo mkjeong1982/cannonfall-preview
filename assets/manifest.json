@@ -93,6 +93,16 @@
         "frameW": 96,
         "frameH": 96,
         "frames": 6
+      },
+      "objects": {
+        "barrel": "objects/barrel-green-canyon.webp",
+        "own": "objects/beehive-log.webp",
+        "fx": {
+          "sheet": "objects/fx-bees.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
       }
     },
     "sky-islands": {
@@ -181,6 +191,16 @@
             "speedX": 6
           }
         ]
+      },
+      "objects": {
+        "barrel": "objects/barrel-sky-islands.webp",
+        "own": "objects/storm-cloud.webp",
+        "fx": {
+          "sheet": "objects/fx-lightning.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
       }
     },
     "moon-rocks": {
@@ -240,6 +260,16 @@
             "opacity": 0.6
           }
         ]
+      },
+      "objects": {
+        "barrel": "objects/barrel-moon-rocks.webp",
+        "own": "objects/gravity-crystal.webp",
+        "fx": {
+          "sheet": "objects/fx-gravity-wave.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
       }
     },
     "snow-fortress": {
@@ -316,6 +346,16 @@
             "opacity": 0.38
           }
         ]
+      },
+      "objects": {
+        "barrel": "objects/barrel-snow-fortress.webp",
+        "own": "objects/ice-crystal.webp",
+        "fx": {
+          "sheet": "objects/fx-ice-shards.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
       }
     },
     "desert-ruins": {
@@ -391,6 +431,203 @@
             "opacity": 0.65
           }
         ]
+      },
+      "objects": {
+        "barrel": "objects/barrel-desert-ruins.webp",
+        "own": "objects/sand-jar.webp",
+        "fx": {
+          "sheet": "objects/fx-sand-eruption.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
+      }
+    },
+    "pirate-cove": {
+      "bg": "maps/pirate-cove/bg.webp",
+      "far": "maps/pirate-cove/far.webp",
+      "mid": "maps/pirate-cove/mid.webp",
+      "front": "maps/pirate-cove/front.webp",
+      "fallzone": "maps/pirate-cove/fallzone.webp",
+      "fill": "maps/pirate-cove/fill.webp",
+      "underside": "maps/pirate-cove/underside.webp",
+      "surface": "maps/pirate-cove/surface.webp",
+      "rock": "maps/pirate-cove/rock.webp",
+      "rockTop": "maps/pirate-cove/rock-top.webp",
+      "hanging": "maps/pirate-cove/hanging-edge.webp",
+      "chunks": {
+        "sheet": "maps/pirate-cove/chunks.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "decor": {
+        "sheet": "maps/pirate-cove/decor.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      },
+      "palette": {
+        "sky": "#8fd3f0",
+        "surface": "#f3d58f",
+        "soil": "#d9b47a",
+        "deep": "#b58a55",
+        "outline": "#5c4630",
+        "debris": "#cfa86c"
+      },
+      "style": "floating",
+      "fallFx": "splash",
+      "layers": {
+        "space": [
+          2880,
+          1068
+        ],
+        "items": [
+          {
+            "file": "maps/common/cloud-1.webp",
+            "x": 260,
+            "y": 205,
+            "parallax": 0.12,
+            "speedX": 7
+          },
+          {
+            "file": "maps/common/cloud-2.webp",
+            "x": 1770,
+            "y": 275,
+            "parallax": 0.17,
+            "speedX": -9
+          },
+          {
+            "file": "maps/common/cloud-3.webp",
+            "x": 2500,
+            "y": 160,
+            "parallax": 0.1,
+            "speedX": 5
+          },
+          {
+            "file": "maps/pirate-cove/shipwreck.webp",
+            "x": 1030,
+            "y": 815,
+            "layer": "mid",
+            "bobPx": 3,
+            "bobPeriodSec": 6.5
+          },
+          {
+            "file": "maps/pirate-cove/water-glint.webp",
+            "x": 980,
+            "y": 925,
+            "layer": "water",
+            "speedX": 23,
+            "opacity": 0.55
+          },
+          {
+            "file": "maps/pirate-cove/water-glint.webp",
+            "x": 2220,
+            "y": 943,
+            "layer": "water",
+            "speedX": -16,
+            "opacity": 0.35
+          }
+        ]
+      },
+      "objects": {
+        "barrel": "objects/pirate-powder-pile.webp",
+        "own": "objects/cannonball-pile.webp",
+        "fx": {
+          "sheet": "objects/fx-cannonballs.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
+      }
+    },
+    "lava-forge": {
+      "bg": "maps/lava-forge/bg.webp",
+      "far": "maps/lava-forge/far.webp",
+      "mid": "maps/lava-forge/mid.webp",
+      "front": "maps/lava-forge/front.webp",
+      "fallzone": "maps/lava-forge/fallzone.webp",
+      "fill": "maps/lava-forge/fill.webp",
+      "underside": "maps/lava-forge/underside.webp",
+      "surface": "maps/lava-forge/surface.webp",
+      "rock": "maps/lava-forge/rock.webp",
+      "rockTop": "maps/lava-forge/rock-top.webp",
+      "hanging": "maps/lava-forge/hanging-edge.webp",
+      "chunks": {
+        "sheet": "maps/lava-forge/chunks.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "decor": {
+        "sheet": "maps/lava-forge/decor.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      },
+      "palette": {
+        "sky": "#3a2230",
+        "surface": "#5a4a58",
+        "soil": "#3e3440",
+        "deep": "#2b222d",
+        "outline": "#170f16",
+        "debris": "#4a3c48"
+      },
+      "style": "cliff",
+      "fallFx": "quicksand",
+      "layers": {
+        "space": [
+          2880,
+          1068
+        ],
+        "items": [
+          {
+            "file": "maps/lava-forge/smoke-1.webp",
+            "x": 340,
+            "y": 300,
+            "layer": "far",
+            "speedX": 5,
+            "bobPx": 14,
+            "bobPeriodSec": 7,
+            "opacity": 0.45
+          },
+          {
+            "file": "maps/lava-forge/smoke-2.webp",
+            "x": 2360,
+            "y": 270,
+            "layer": "far",
+            "speedX": -4,
+            "bobPx": 11,
+            "bobPeriodSec": 6,
+            "opacity": 0.5
+          },
+          {
+            "file": "maps/lava-forge/lava-shimmer.webp",
+            "x": 860,
+            "y": 940,
+            "layer": "water",
+            "speedX": 16,
+            "opacity": 0.63
+          },
+          {
+            "file": "maps/lava-forge/lava-shimmer.webp",
+            "x": 2150,
+            "y": 960,
+            "layer": "water",
+            "speedX": -12,
+            "opacity": 0.42
+          }
+        ]
+      },
+      "objects": {
+        "barrel": "objects/barrel-desert-ruins.webp",
+        "own": "objects/magma-rock.webp",
+        "fx": {
+          "sheet": "objects/fx-burning-ground.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
       }
     }
   },
@@ -1230,31 +1467,64 @@
         "frames": 3
       },
       "emberSmall": "fx/premium/ember-small.png"
+    },
+    "veil2": {
+      "emitter": "veil2/emitter.webp",
+      "lens": "veil2/emitter-lens.webp",
+      "glow": {
+        "split": "veil2/emitter-glow-split.webp",
+        "big": "veil2/emitter-glow-big.webp",
+        "reverse": "veil2/emitter-glow-reverse.webp"
+      },
+      "beam": {
+        "split": "veil2/beam-split.webp",
+        "big": "veil2/beam-fire.webp",
+        "reverse": "veil2/beam-reverse.webp"
+      },
+      "start": "veil2/beam-start.webp",
+      "end": "veil2/beam-end.webp",
+      "floor": "veil2/beam-floor.webp",
+      "dissolve": {
+        "sheet": "veil2/beam-dissolve.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 8
+      }
     }
   },
   "scale": 3,
   "ui": {
     "btn": {
       "green": [
-        "ui/btn-green.png",
-        "ui/btn-green-down.png"
+        "ui/buttons/btn-green.webp",
+        "ui/buttons/btn-green-down.webp",
+        "ui/buttons/btn-green-disabled.webp"
       ],
       "blue": [
-        "ui/btn-blue.png",
-        "ui/btn-blue-down.png"
+        "ui/buttons/btn-blue.webp",
+        "ui/buttons/btn-blue-down.webp",
+        "ui/buttons/btn-blue-disabled.webp"
       ],
       "orange": [
-        "ui/btn-orange.png",
-        "ui/btn-orange-down.png"
+        "ui/buttons/btn-orange.webp",
+        "ui/buttons/btn-orange-down.webp",
+        "ui/buttons/btn-orange-disabled.webp"
       ],
       "gray": [
-        "ui/btn-gray.png"
+        "ui/buttons/btn-gray.webp",
+        "ui/buttons/btn-gray-down.webp",
+        "ui/buttons/btn-gray-disabled.webp"
       ],
-      "slice": 12
+      "red": [
+        "ui/buttons/btn-red.webp",
+        "ui/buttons/btn-red-down.webp",
+        "ui/buttons/btn-red-disabled.webp"
+      ],
+      "slice": 16
     },
     "btnRound": [
-      "ui/btn-round.png",
-      "ui/btn-round-down.png"
+      "ui/buttons/round-blue.webp",
+      "ui/buttons/round-blue-down.webp"
     ],
     "icons": {
       "sheet": "ui/icons.png",
@@ -1557,23 +1827,70 @@
       "hand-press": "ui/tutorial/hand-press.webp",
       "ring": "ui/tutorial/ring.webp",
       "tap": "ui/tutorial/tap-ripple.webp",
-      "veil-split": "ui/tutorial/veil-split.webp",
-      "veil-fire": "ui/tutorial/veil-fire.webp",
-      "veil-bounce": "ui/tutorial/veil-bounce.webp"
+      "veil-split": "ui/tutorial2/veil-split3.webp",
+      "veil-fire": "ui/tutorial2/veil-fire.webp",
+      "veil-bounce": "ui/tutorial2/veil-bounce.webp",
+      "hand-hold": "ui/tutorial2/hand-hold.webp",
+      "hand-slide": "ui/tutorial2/hand-slide.webp",
+      "arrow-up": "ui/tutorial2/arrow-up.webp",
+      "arrow-down": "ui/tutorial2/arrow-down.webp",
+      "win-fall": "ui/tutorial2/win-fall.webp",
+      "win-hp": "ui/tutorial2/win-hp.webp"
     },
     "tutorialTip": {
       "hand": [
         0.5547,
         0.0254
       ]
-    }
+    },
+    "pill": {
+      "green": [
+        "ui/buttons/pill-green.webp",
+        "ui/buttons/pill-green-down.webp",
+        "ui/buttons/pill-green-disabled.webp"
+      ],
+      "blue": [
+        "ui/buttons/pill-blue.webp",
+        "ui/buttons/pill-blue-down.webp",
+        "ui/buttons/pill-blue-disabled.webp"
+      ],
+      "orange": [
+        "ui/buttons/pill-orange.webp",
+        "ui/buttons/pill-orange-down.webp",
+        "ui/buttons/pill-orange-disabled.webp"
+      ],
+      "gray": [
+        "ui/buttons/pill-gray.webp",
+        "ui/buttons/pill-gray-down.webp",
+        "ui/buttons/pill-gray-disabled.webp"
+      ],
+      "red": [
+        "ui/buttons/pill-red.webp",
+        "ui/buttons/pill-red-down.webp",
+        "ui/buttons/pill-red-disabled.webp"
+      ],
+      "slice": [
+        13.333333333333334,
+        10.666666666666666
+      ]
+    },
+    "toggle": [
+      "ui/buttons/toggle-on.webp",
+      "ui/buttons/toggle-off.webp"
+    ],
+    "btnClose": [
+      "ui/buttons/btn-close.webp",
+      "ui/buttons/btn-close-down.webp"
+    ]
   },
   "bosses": {
     "grumbolt": "bosses/grumbolt-portrait.webp",
     "sandking": "bosses/sandking-portrait.webp",
     "frostbite": "bosses/frostbite-portrait.webp",
     "puffzilla": "bosses/puffzilla-portrait.webp",
-    "moonzor": "bosses/moonzor-portrait.webp"
+    "moonzor": "bosses/moonzor-portrait.webp",
+    "kaboom": "bosses/kaboom-portrait.webp",
+    "hornster": "bosses/hornster-portrait.webp"
   },
   "upgrades": {
     "armor-plate-1": "upgrades/armor-plate-1.png",
@@ -1659,6 +1976,10 @@
     "region-thumb-moon-rocks": "adventure/region-thumb-moon-rocks.webp",
     "region-thumb-sky-islands": "adventure/region-thumb-sky-islands.webp",
     "region-thumb-snow-fortress": "adventure/region-thumb-snow-fortress.webp",
-    "travel-boomer": "adventure/travel-boomer.webp"
+    "travel-boomer": "adventure/travel-boomer.webp",
+    "region-pirate-cove": "adventure/region-pirate-cove.webp",
+    "region-thumb-pirate-cove": "adventure/region-thumb-pirate-cove.webp",
+    "region-lava-forge": "adventure/region-lava-forge.webp",
+    "region-thumb-lava-forge": "adventure/region-thumb-lava-forge.webp"
   }
 }
