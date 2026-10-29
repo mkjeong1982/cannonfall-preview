@@ -1819,6 +1819,265 @@
           66
         ]
       }
+    },
+    "boss-grumbolt": {
+      "bodySheet": "bosses/grumbolt/body-sheet.webp",
+      "barrel": "bosses/grumbolt/barrel.png",
+      "mount": "bosses/grumbolt/mount.png",
+      "pivot": {
+        "x": 56,
+        "y": 2
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/grumbolt/body-damaged.webp",
+      "wreck": "bosses/grumbolt/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          28,
+          42
+        ],
+        "shoulder": [
+          56,
+          10
+        ],
+        "side": [
+          48,
+          62
+        ]
+      }
+    },
+    "boss-kaboom": {
+      "bodySheet": "bosses/kaboom/body-sheet.webp",
+      "barrel": "bosses/kaboom/barrel.png",
+      "mount": "bosses/kaboom/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/kaboom/body-damaged.webp",
+      "wreck": "bosses/kaboom/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          30,
+          42
+        ],
+        "shoulder": [
+          94,
+          34
+        ],
+        "side": [
+          54,
+          66
+        ]
+      }
+    },
+    "boss-sandking": {
+      "bodySheet": "bosses/sandking/body-sheet.webp",
+      "barrel": "bosses/sandking/barrel.png",
+      "mount": "bosses/sandking/mount.png",
+      "pivot": {
+        "x": 57,
+        "y": 3
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/sandking/body-damaged.webp",
+      "wreck": "bosses/sandking/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          40,
+          31
+        ],
+        "shoulder": [
+          57,
+          11
+        ],
+        "side": [
+          57,
+          63
+        ]
+      }
+    },
+    "boss-hornster": {
+      "bodySheet": "bosses/hornster/body-sheet.webp",
+      "barrel": "bosses/hornster/barrel.png",
+      "mount": "bosses/hornster/mount.png",
+      "pivot": {
+        "x": 50,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/hornster/body-damaged.webp",
+      "wreck": "bosses/hornster/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          34,
+          36
+        ],
+        "shoulder": [
+          50,
+          8
+        ],
+        "side": [
+          53,
+          66
+        ]
+      }
+    },
+    "boss-frostbite": {
+      "bodySheet": "bosses/frostbite/body-sheet.webp",
+      "barrel": "bosses/frostbite/barrel.png",
+      "mount": "bosses/frostbite/mount.png",
+      "pivot": {
+        "x": 54,
+        "y": 1
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/frostbite/body-damaged.webp",
+      "wreck": "bosses/frostbite/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          43,
+          35
+        ],
+        "shoulder": [
+          54,
+          9
+        ],
+        "side": [
+          44,
+          65
+        ]
+      }
+    },
+    "boss-puffzilla": {
+      "bodySheet": "bosses/puffzilla/body-sheet.webp",
+      "barrel": "bosses/puffzilla/barrel.png",
+      "mount": "bosses/puffzilla/mount.png",
+      "pivot": {
+        "x": 87,
+        "y": 27
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/puffzilla/body-damaged.webp",
+      "wreck": "bosses/puffzilla/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          29,
+          54
+        ],
+        "shoulder": [
+          93,
+          27
+        ],
+        "side": [
+          56,
+          69
+        ]
+      }
+    },
+    "boss-moonzor": {
+      "bodySheet": "bosses/moonzor/body-sheet.webp",
+      "barrel": "bosses/moonzor/barrel.png",
+      "mount": "bosses/moonzor/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/moonzor/body-damaged.webp",
+      "wreck": "bosses/moonzor/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          40,
+          34
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
     }
   },
   "fx": {
@@ -2266,6 +2525,8 @@
       "frameH": 270
     },
     "aimBubble": "ui/aim-bubble.webp",
+    "exitIcon": "ui/icons/icon-exit.webp",
+    "playIcon": "ui/icons/icon-play.webp",
     "tutorial": {
       "hand": "ui/tutorial/hand.webp",
       "hand-press": "ui/tutorial/hand-press.webp",
@@ -2480,5 +2741,161 @@
     "region-thumb-pirate-cove": "adventure/region-thumb-pirate-cove.webp",
     "region-lava-forge": "adventure/region-lava-forge.webp",
     "region-thumb-lava-forge": "adventure/region-thumb-lava-forge.webp"
+  },
+  "bossArt": {
+    "grumbolt": {
+      "look": "boss-grumbolt",
+      "aura": {
+        "sheet": "bosses/grumbolt/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/grumbolt/shell.png",
+      "trail": {
+        "sheet": "bosses/grumbolt/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/grumbolt/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "kaboom": {
+      "look": "boss-kaboom",
+      "aura": {
+        "sheet": "bosses/kaboom/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/kaboom/shell.png",
+      "trail": {
+        "sheet": "bosses/kaboom/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/kaboom/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "sandking": {
+      "look": "boss-sandking",
+      "aura": {
+        "sheet": "bosses/sandking/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/sandking/shell.png",
+      "trail": {
+        "sheet": "bosses/sandking/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/sandking/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "hornster": {
+      "look": "boss-hornster",
+      "aura": {
+        "sheet": "bosses/hornster/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/hornster/shell.png",
+      "trail": {
+        "sheet": "bosses/hornster/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/hornster/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "frostbite": {
+      "look": "boss-frostbite",
+      "aura": {
+        "sheet": "bosses/frostbite/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/frostbite/shell.png",
+      "trail": {
+        "sheet": "bosses/frostbite/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/frostbite/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "puffzilla": {
+      "look": "boss-puffzilla",
+      "aura": {
+        "sheet": "bosses/puffzilla/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/puffzilla/shell.png",
+      "trail": {
+        "sheet": "bosses/puffzilla/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/puffzilla/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "moonzor": {
+      "look": "boss-moonzor",
+      "aura": {
+        "sheet": "bosses/moonzor/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/moonzor/shell.png",
+      "trail": {
+        "sheet": "bosses/moonzor/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/moonzor/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    }
   }
 }
