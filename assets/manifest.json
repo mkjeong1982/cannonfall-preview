@@ -531,7 +531,7 @@
         ]
       },
       "objects": {
-        "barrel": "objects/pirate-powder-pile.webp",
+        "barrel": "objects/barrel-pirate-cove.webp",
         "own": "objects/cannonball-pile.webp",
         "fx": {
           "sheet": "objects/fx-cannonballs.webp",
@@ -620,7 +620,7 @@
         ]
       },
       "objects": {
-        "barrel": "objects/barrel-desert-ruins.webp",
+        "barrel": "objects/barrel-lava-forge.webp",
         "own": "objects/magma-rock.webp",
         "fx": {
           "sheet": "objects/fx-burning-ground.webp",
@@ -637,8 +637,8 @@
       "barrel": "cannons/boomer/barrel.png",
       "mount": "cannons/boomer/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 55,
+        "y": 2
       },
       "bodyAnchor": [
         0.5,
@@ -654,15 +654,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          31,
+          47
+        ],
+        "shoulder": [
+          55,
+          10
+        ],
+        "side": [
+          32,
+          66
+        ]
+      }
     },
     "default-red": {
       "bodySheet": "cannons/boomer/body-sheet.webp",
       "barrel": "cannons/boomer/barrel.png",
       "mount": "cannons/boomer/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 55,
+        "y": 2
       },
       "bodyAnchor": [
         0.5,
@@ -678,15 +692,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          31,
+          47
+        ],
+        "shoulder": [
+          55,
+          10
+        ],
+        "side": [
+          32,
+          66
+        ]
+      }
     },
     "grumbolt": {
       "bodySheet": "cannons/grumbolt/body-sheet.webp",
       "barrel": "cannons/grumbolt/barrel.png",
       "mount": "cannons/grumbolt/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 56,
+        "y": 2
       },
       "bodyAnchor": [
         0.5,
@@ -702,15 +730,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          28,
+          42
+        ],
+        "shoulder": [
+          56,
+          10
+        ],
+        "side": [
+          48,
+          62
+        ]
+      }
     },
     "sandking": {
       "bodySheet": "cannons/sandking/body-sheet.webp",
       "barrel": "cannons/sandking/barrel.png",
       "mount": "cannons/sandking/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 57,
+        "y": 3
       },
       "bodyAnchor": [
         0.5,
@@ -726,15 +768,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          40,
+          31
+        ],
+        "shoulder": [
+          57,
+          11
+        ],
+        "side": [
+          57,
+          63
+        ]
+      }
     },
     "frostbite": {
       "bodySheet": "cannons/frostbite/body-sheet.webp",
       "barrel": "cannons/frostbite/barrel.png",
       "mount": "cannons/frostbite/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 54,
+        "y": 1
       },
       "bodyAnchor": [
         0.5,
@@ -750,7 +806,21 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          43,
+          35
+        ],
+        "shoulder": [
+          54,
+          9
+        ],
+        "side": [
+          44,
+          65
+        ]
+      }
     },
     "robot": {
       "bodySheet": "cannons/puffzilla/body-sheet.webp",
@@ -774,15 +844,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          29,
+          54
+        ],
+        "shoulder": [
+          93,
+          27
+        ],
+        "side": [
+          56,
+          69
+        ]
+      }
     },
     "space": {
       "bodySheet": "cannons/moonzor/body-sheet.webp",
       "barrel": "cannons/moonzor/barrel.png",
       "mount": "cannons/moonzor/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 52,
+        "y": 0
       },
       "bodyAnchor": [
         0.5,
@@ -798,7 +882,21 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          40,
+          34
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
     },
     "pirate": {
       "bodySheet": "cannons/kaboom/body-sheet.webp",
@@ -822,15 +920,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          30,
+          42
+        ],
+        "shoulder": [
+          94,
+          34
+        ],
+        "side": [
+          54,
+          66
+        ]
+      }
     },
     "candy": {
       "bodySheet": "cannons/gummy/body-sheet.webp",
       "barrel": "cannons/gummy/barrel.png",
       "mount": "cannons/gummy/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 54,
+        "y": 4
       },
       "bodyAnchor": [
         0.5,
@@ -846,15 +958,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          32,
+          38
+        ],
+        "shoulder": [
+          54,
+          12
+        ],
+        "side": [
+          52,
+          64
+        ]
+      }
     },
     "shellby": {
       "bodySheet": "cannons/shellby/body-sheet.webp",
       "barrel": "cannons/shellby/barrel.png",
       "mount": "cannons/shellby/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 65,
+        "y": 0
       },
       "bodyAnchor": [
         0.5,
@@ -870,15 +996,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          42,
+          26
+        ],
+        "shoulder": [
+          65,
+          10
+        ],
+        "side": [
+          51,
+          65
+        ]
+      }
     },
     "gold": {
       "bodySheet": "cannons/hornster/body-sheet.webp",
       "barrel": "cannons/hornster/barrel.png",
       "mount": "cannons/hornster/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 50,
+        "y": 0
       },
       "bodyAnchor": [
         0.5,
@@ -894,15 +1034,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          34,
+          36
+        ],
+        "shoulder": [
+          50,
+          8
+        ],
+        "side": [
+          53,
+          66
+        ]
+      }
     },
     "default-blue@ice-blue": {
       "bodySheet": "skins/boomer/ice-blue/body-sheet.webp",
       "barrel": "skins/boomer/ice-blue/barrel.png",
       "mount": "skins/boomer/ice-blue/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 55,
+        "y": 2
       },
       "bodyAnchor": [
         0.5,
@@ -918,15 +1072,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          31,
+          47
+        ],
+        "shoulder": [
+          55,
+          10
+        ],
+        "side": [
+          32,
+          66
+        ]
+      }
     },
     "default-blue@space-ranger": {
       "bodySheet": "skins/boomer/space-ranger/body-sheet.webp",
       "barrel": "skins/boomer/space-ranger/barrel.png",
       "mount": "skins/boomer/space-ranger/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 55,
+        "y": 2
       },
       "bodyAnchor": [
         0.5,
@@ -942,15 +1110,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          31,
+          47
+        ],
+        "shoulder": [
+          55,
+          10
+        ],
+        "side": [
+          32,
+          66
+        ]
+      }
     },
     "grumbolt@lava-armor": {
       "bodySheet": "skins/grumbolt/lava-armor/body-sheet.webp",
       "barrel": "skins/grumbolt/lava-armor/barrel.png",
       "mount": "skins/grumbolt/lava-armor/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 56,
+        "y": 2
       },
       "bodyAnchor": [
         0.5,
@@ -966,15 +1148,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          28,
+          42
+        ],
+        "shoulder": [
+          56,
+          10
+        ],
+        "side": [
+          48,
+          62
+        ]
+      }
     },
     "grumbolt@iron-commander": {
       "bodySheet": "skins/grumbolt/iron-commander/body-sheet.webp",
       "barrel": "skins/grumbolt/iron-commander/barrel.png",
       "mount": "skins/grumbolt/iron-commander/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 56,
+        "y": 2
       },
       "bodyAnchor": [
         0.5,
@@ -990,15 +1186,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          28,
+          42
+        ],
+        "shoulder": [
+          56,
+          10
+        ],
+        "side": [
+          48,
+          62
+        ]
+      }
     },
     "shellby@coral-reef": {
       "bodySheet": "skins/shellby/coral-reef/body-sheet.webp",
       "barrel": "skins/shellby/coral-reef/barrel.png",
       "mount": "skins/shellby/coral-reef/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 65,
+        "y": 0
       },
       "bodyAnchor": [
         0.5,
@@ -1014,15 +1224,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          42,
+          26
+        ],
+        "shoulder": [
+          65,
+          10
+        ],
+        "side": [
+          51,
+          65
+        ]
+      }
     },
     "shellby@jungle-guardian": {
       "bodySheet": "skins/shellby/jungle-guardian/body-sheet.webp",
       "barrel": "skins/shellby/jungle-guardian/barrel.png",
       "mount": "skins/shellby/jungle-guardian/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 65,
+        "y": 0
       },
       "bodyAnchor": [
         0.5,
@@ -1038,15 +1262,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          42,
+          26
+        ],
+        "shoulder": [
+          65,
+          10
+        ],
+        "side": [
+          51,
+          65
+        ]
+      }
     },
     "frostbite@arctic-sunrise": {
       "bodySheet": "skins/frostbite/arctic-sunrise/body-sheet.webp",
       "barrel": "skins/frostbite/arctic-sunrise/barrel.png",
       "mount": "skins/frostbite/arctic-sunrise/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 54,
+        "y": 1
       },
       "bodyAnchor": [
         0.5,
@@ -1062,15 +1300,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          43,
+          35
+        ],
+        "shoulder": [
+          54,
+          9
+        ],
+        "side": [
+          44,
+          65
+        ]
+      }
     },
     "frostbite@aurora-knight": {
       "bodySheet": "skins/frostbite/aurora-knight/body-sheet.webp",
       "barrel": "skins/frostbite/aurora-knight/barrel.png",
       "mount": "skins/frostbite/aurora-knight/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 54,
+        "y": 1
       },
       "bodyAnchor": [
         0.5,
@@ -1086,15 +1338,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          43,
+          35
+        ],
+        "shoulder": [
+          54,
+          9
+        ],
+        "side": [
+          44,
+          65
+        ]
+      }
     },
     "candy@lime-jelly": {
       "bodySheet": "skins/gummy/lime-jelly/body-sheet.webp",
       "barrel": "skins/gummy/lime-jelly/barrel.png",
       "mount": "skins/gummy/lime-jelly/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 54,
+        "y": 4
       },
       "bodyAnchor": [
         0.5,
@@ -1110,15 +1376,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          32,
+          38
+        ],
+        "shoulder": [
+          54,
+          12
+        ],
+        "side": [
+          52,
+          64
+        ]
+      }
     },
     "candy@halloween-glow": {
       "bodySheet": "skins/gummy/halloween-glow/body-sheet.webp",
       "barrel": "skins/gummy/halloween-glow/barrel.png",
       "mount": "skins/gummy/halloween-glow/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 54,
+        "y": 4
       },
       "bodyAnchor": [
         0.5,
@@ -1134,15 +1414,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          32,
+          38
+        ],
+        "shoulder": [
+          54,
+          12
+        ],
+        "side": [
+          52,
+          64
+        ]
+      }
     },
     "space@cosmic-mint": {
       "bodySheet": "skins/moonzor/cosmic-mint/body-sheet.webp",
       "barrel": "skins/moonzor/cosmic-mint/barrel.png",
       "mount": "skins/moonzor/cosmic-mint/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 52,
+        "y": 0
       },
       "bodyAnchor": [
         0.5,
@@ -1158,15 +1452,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          40,
+          34
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
     },
     "space@nebula-pilot": {
       "bodySheet": "skins/moonzor/nebula-pilot/body-sheet.webp",
       "barrel": "skins/moonzor/nebula-pilot/barrel.png",
       "mount": "skins/moonzor/nebula-pilot/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 52,
+        "y": 0
       },
       "bodyAnchor": [
         0.5,
@@ -1182,7 +1490,21 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          40,
+          34
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
     },
     "robot@raspberry-pop": {
       "bodySheet": "skins/puffzilla/raspberry-pop/body-sheet.webp",
@@ -1206,7 +1528,21 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          29,
+          54
+        ],
+        "shoulder": [
+          93,
+          27
+        ],
+        "side": [
+          56,
+          69
+        ]
+      }
     },
     "robot@cloud-parade": {
       "bodySheet": "skins/puffzilla/cloud-parade/body-sheet.webp",
@@ -1230,7 +1566,21 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          29,
+          54
+        ],
+        "shoulder": [
+          93,
+          27
+        ],
+        "side": [
+          56,
+          69
+        ]
+      }
     },
     "pirate@brass-corsair": {
       "bodySheet": "skins/kaboom/brass-corsair/body-sheet.webp",
@@ -1254,7 +1604,21 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          30,
+          42
+        ],
+        "shoulder": [
+          94,
+          34
+        ],
+        "side": [
+          54,
+          66
+        ]
+      }
     },
     "pirate@ghost-ship": {
       "bodySheet": "skins/kaboom/ghost-ship/body-sheet.webp",
@@ -1278,15 +1642,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          30,
+          42
+        ],
+        "shoulder": [
+          94,
+          34
+        ],
+        "side": [
+          54,
+          66
+        ]
+      }
     },
     "sandking@sapphire-dune": {
       "bodySheet": "skins/sandking/sapphire-dune/body-sheet.webp",
       "barrel": "skins/sandking/sapphire-dune/barrel.png",
       "mount": "skins/sandking/sapphire-dune/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 57,
+        "y": 3
       },
       "bodyAnchor": [
         0.5,
@@ -1302,15 +1680,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          40,
+          31
+        ],
+        "shoulder": [
+          57,
+          11
+        ],
+        "side": [
+          57,
+          63
+        ]
+      }
     },
     "sandking@sun-pharaoh": {
       "bodySheet": "skins/sandking/sun-pharaoh/body-sheet.webp",
       "barrel": "skins/sandking/sun-pharaoh/barrel.png",
       "mount": "skins/sandking/sun-pharaoh/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 57,
+        "y": 3
       },
       "bodyAnchor": [
         0.5,
@@ -1326,15 +1718,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          40,
+          31
+        ],
+        "shoulder": [
+          57,
+          11
+        ],
+        "side": [
+          57,
+          63
+        ]
+      }
     },
     "gold@storm-bull": {
       "bodySheet": "skins/hornster/storm-bull/body-sheet.webp",
       "barrel": "skins/hornster/storm-bull/barrel.png",
       "mount": "skins/hornster/storm-bull/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 50,
+        "y": 0
       },
       "bodyAnchor": [
         0.5,
@@ -1350,15 +1756,29 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          34,
+          36
+        ],
+        "shoulder": [
+          50,
+          8
+        ],
+        "side": [
+          53,
+          66
+        ]
+      }
     },
     "gold@royal-champion": {
       "bodySheet": "skins/hornster/royal-champion/body-sheet.webp",
       "barrel": "skins/hornster/royal-champion/barrel.png",
       "mount": "skins/hornster/royal-champion/mount.png",
       "pivot": {
-        "x": 87,
-        "y": 27
+        "x": 50,
+        "y": 0
       },
       "bodyAnchor": [
         0.5,
@@ -1374,7 +1794,21 @@
       "muzzle": [
         0.96,
         0.5
-      ]
+      ],
+      "anchors": {
+        "back": [
+          34,
+          36
+        ],
+        "shoulder": [
+          50,
+          8
+        ],
+        "side": [
+          53,
+          66
+        ]
+      }
     }
   },
   "fx": {
@@ -1881,6 +2315,26 @@
     "btnClose": [
       "ui/buttons/btn-close.webp",
       "ui/buttons/btn-close-down.webp"
+    ],
+    "max": {
+      "badge": "ui/max/badge.png",
+      "resetToken": "ui/max/reset-token.png",
+      "burst": {
+        "sheet": "ui/max/burst-sheet.webp",
+        "frameW": 144,
+        "frameH": 144,
+        "frames": 10
+      },
+      "aura": {
+        "sheet": "ui/max/gold-aura-sheet.webp",
+        "frameW": 144,
+        "frameH": 144,
+        "frames": 8
+      }
+    },
+    "arrows": [
+      "ui/buttons/icon-arrow-left.png",
+      "ui/buttons/icon-arrow-right.png"
     ]
   },
   "bosses": {
@@ -1913,7 +2367,39 @@
       "frameW": 144,
       "frameH": 144,
       "frames": 8
-    }
+    },
+    "power-decal-sheet": {
+      "sheet": "upgrades/tiers/power-decal-sheet.webp",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 10
+    },
+    "armor-decal-sheet": {
+      "sheet": "upgrades/tiers/armor-decal-sheet.webp",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 10
+    },
+    "reload-decal-sheet": {
+      "sheet": "upgrades/tiers/reload-decal-sheet.webp",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 10
+    },
+    "blast-decal-sheet": {
+      "sheet": "upgrades/tiers/blast-decal-sheet.webp",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 10
+    },
+    "shell-decal-sheet": {
+      "sheet": "upgrades/tiers/shell-decal-sheet.webp",
+      "frameW": 96,
+      "frameH": 96,
+      "frames": 10
+    },
+    "blast-coil": "upgrades/tiers/blast-coil.png",
+    "shell-magazine": "upgrades/tiers/shell-magazine.png"
   },
   "lobby2": {
     "bg-far": "lobby2/bg-far.webp",
