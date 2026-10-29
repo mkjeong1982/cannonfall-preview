@@ -2326,16 +2326,22 @@
       "badge": "ui/max/badge.png",
       "resetToken": "ui/max/reset-token.png",
       "burst": {
-        "sheet": "ui/max/burst-sheet.webp",
-        "frameW": 144,
-        "frameH": 144,
-        "frames": 10
+        "sheet": "ui/max/burst-v2-sheet.webp",
+        "frameW": 192,
+        "frameH": 192,
+        "frames": 12
       },
-      "aura": {
-        "sheet": "ui/max/gold-aura-sheet.webp",
-        "frameW": 144,
-        "frameH": 144,
-        "frames": 8
+      "auraBack": {
+        "sheet": "ui/max/gold-aura-back-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 16
+      },
+      "auraFront": {
+        "sheet": "ui/max/gold-aura-front-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 16
       }
     },
     "arrows": [
