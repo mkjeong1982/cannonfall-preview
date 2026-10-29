@@ -979,8 +979,8 @@
       "barrel": "cannons/shellby/barrel.png",
       "mount": "cannons/shellby/mount.png",
       "pivot": {
-        "x": 65,
-        "y": 0
+        "x": 87,
+        "y": 27
       },
       "bodyAnchor": [
         0.5,
@@ -999,18 +999,20 @@
       ],
       "anchors": {
         "back": [
-          42,
-          26
+          36,
+          30
         ],
         "shoulder": [
-          65,
-          10
+          84,
+          31
         ],
         "side": [
           51,
           65
         ]
-      }
+      },
+      "headSheet": "cannons/shellby/head-sheet.webp",
+      "head": "cannons/shellby/head.png"
     },
     "gold": {
       "bodySheet": "cannons/hornster/body-sheet.webp",
@@ -1207,8 +1209,8 @@
       "barrel": "skins/shellby/coral-reef/barrel.png",
       "mount": "skins/shellby/coral-reef/mount.png",
       "pivot": {
-        "x": 65,
-        "y": 0
+        "x": 87,
+        "y": 27
       },
       "bodyAnchor": [
         0.5,
@@ -1227,26 +1229,28 @@
       ],
       "anchors": {
         "back": [
-          42,
-          26
+          36,
+          30
         ],
         "shoulder": [
-          65,
-          10
+          84,
+          31
         ],
         "side": [
           51,
           65
         ]
-      }
+      },
+      "headSheet": "skins/shellby/coral-reef/head-sheet.webp",
+      "head": "skins/shellby/coral-reef/head.png"
     },
     "shellby@jungle-guardian": {
       "bodySheet": "skins/shellby/jungle-guardian/body-sheet.webp",
       "barrel": "skins/shellby/jungle-guardian/barrel.png",
       "mount": "skins/shellby/jungle-guardian/mount.png",
       "pivot": {
-        "x": 65,
-        "y": 0
+        "x": 87,
+        "y": 27
       },
       "bodyAnchor": [
         0.5,
@@ -1265,18 +1269,20 @@
       ],
       "anchors": {
         "back": [
-          42,
-          26
+          36,
+          30
         ],
         "shoulder": [
-          65,
-          10
+          84,
+          31
         ],
         "side": [
           51,
           65
         ]
-      }
+      },
+      "headSheet": "skins/shellby/jungle-guardian/head-sheet.webp",
+      "head": "skins/shellby/jungle-guardian/head.png"
     },
     "frostbite@arctic-sunrise": {
       "bodySheet": "skins/frostbite/arctic-sunrise/body-sheet.webp",
