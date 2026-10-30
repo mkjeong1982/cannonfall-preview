@@ -2625,8 +2625,8 @@
       ],
       "anchors": {
         "back": [
-          38,
-          35
+          46,
+          40
         ],
         "shoulder": [
           52,
@@ -2662,8 +2662,8 @@
       ],
       "anchors": {
         "back": [
-          38,
-          35
+          46,
+          40
         ],
         "shoulder": [
           52,
@@ -2789,6 +2789,22 @@
         "frameH": 96,
         "frames": 8
       }
+    },
+    "barrelBlast": {
+      "blast": {
+        "sheet": "fx/barrel-blast/blast-sheet.webp",
+        "frameW": 512,
+        "frameH": 512,
+        "frames": 12
+      },
+      "ring": "fx/barrel-blast/shockwave.webp",
+      "debris": {
+        "sheet": "fx/barrel-blast/debris-sheet.webp",
+        "frameW": 128,
+        "frameH": 128,
+        "frames": 8
+      },
+      "spark": "fx/barrel-blast/spark.webp"
     }
   },
   "scale": 3,

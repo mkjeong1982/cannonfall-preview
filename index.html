@@ -4,14 +4,130 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
     <title>Cannonfall</title>
+    <!-- TASK-125: the still title first thing, before the game's script -->
+    <link rel="preload" as="image" href="assets/boot/title-still.webp" fetchpriority="high" />
     <style>
       html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #1d2b3a; overscroll-behavior: none; }
       #game { position: fixed; inset: 0; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
       canvas { display: block; touch-action: none; }
+      /* TASK-125: the boot screen — the still title (plain colour without it), the cannonball bar (CSS alone without its pictures) */
+      #boot { position: fixed; inset: 0; z-index: 10; background: #1d2b3a url(assets/boot/title-still.webp) center / cover no-repeat; transition: opacity 0.35s ease-out; pointer-events: none; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      #boot.out { opacity: 0; }
+      #boot .bar { position: absolute; left: 50%; bottom: max(9vh, 22px); transform: translateX(-50%); width: min(62vw, 520px); height: clamp(26px, 7.5vh, 44px); }
+      #boot .frame { position: absolute; inset: 0; border-radius: 999px; background: #1a1206; box-shadow: inset 0 2px 4px #000a, 0 0 0 3px #f6c64b, 0 0 0 5px #5a3a0e, 0 4px 10px #0008; }
+      #boot .frame.art { box-shadow: 0 2px 8px #0007; background: rgba(10, 16, 24, 0.6); background-clip: padding-box; border-style: solid; border-width: 0 calc(var(--h) / 2); border-image: url(assets/boot/bar-frame.png) 0 48 fill / 0 calc(var(--h) / 2) stretch; }
+      #boot .fill { position: absolute; left: calc(var(--h) * 0.17); top: calc(var(--h) * 0.17); bottom: calc(var(--h) * 0.17); width: 0; border-radius: 999px; overflow: hidden;
+        background: url(assets/boot/bar-fill.png) left center / auto 100% repeat-x, repeating-linear-gradient(-45deg, #ffb02e 0 8px, #ff7a1a 8px 16px), linear-gradient(#ffe066, #ff7a1a);
+        background-blend-mode: normal; animation: boot-stripes 0.6s linear infinite; }
+      @keyframes boot-stripes { to { background-position: 46px center, 22.6px 0, 0 0; } }
+      #boot .ball { position: absolute; top: 50%; left: 0; width: calc(var(--h) * 1.5); height: calc(var(--h) * 1.5); transform: translate(-50%, -50%); }
+      #boot .ball img, #boot .ball i { position: absolute; inset: 0; width: 100%; height: 100%; animation: boot-roll 0.7s linear infinite; }
+      #boot .ball i { display: none; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #8a8f99, #2a2d33 55%, #0d0e10); box-shadow: 0 0 0 2px #0008; }
+      #boot .ball.css img { display: none; }
+      #boot .ball.css i { display: block; }
+      #boot .trail { position: absolute; right: 60%; top: 50%; width: calc(var(--h) * 2.6); height: calc(var(--h) * 0.9); transform: translateY(-50%); border-radius: 999px; background: linear-gradient(90deg, #fff0, #ffd36a99 60%, #fff3c4); filter: blur(2px); animation: boot-flicker 0.18s steps(2) infinite; }
+      #boot .trail.art { filter: none; border-radius: 0; background: url(assets/boot/bar-trail.png) 0 0 / 100% 100% no-repeat; animation: none; }
+      @keyframes boot-roll { to { transform: rotate(360deg); } }
+      @keyframes boot-flicker { 50% { opacity: 0.7; } }
+      #boot .words { position: absolute; left: 0; right: 0; top: calc(100% + 8px); display: flex; justify-content: center; gap: 0.6em; color: #fff; font-size: clamp(11px, 2.2vh, 15px); font-weight: 700; text-shadow: 0 1px 3px #000, 0 0 2px #000; }
+      #boot .pct { opacity: 0.75; font-variant-numeric: tabular-nums; }
     </style>
-    <script type="module" crossorigin src="/cannonfall-preview/assets/index-B-HsrOAN.js"></script>
+    <script type="module" crossorigin src="/cannonfall-preview/assets/index-C7uEKr2p.js"></script>
   </head>
   <body>
     <div id="game"></div>
+    <div id="boot">
+      <div class="bar">
+        <div class="frame"></div>
+        <div class="fill"></div>
+        <div class="ball"><div class="trail"></div><img alt="" src="assets/boot/bar-ball.png" onerror="this.parentNode.classList.add('css')" /><i></i></div>
+        <div class="words"><span class="say">Loading…</span><span class="pct">0%</span></div>
+      </div>
+    </div>
+    <script>
+      // TASK-125: the bar from the first byte — a slow make-believe 0 → 30 % while the game's script comes,
+      // then the game's own loading (window.__boot.set) up to 100 %, a fade (window.__boot.done)
+      (function () {
+        var el = document.getElementById("boot");
+        var bar = el.querySelector(".bar");
+        var fill = el.querySelector(".fill");
+        var ball = el.querySelector(".ball");
+        var pct = el.querySelector(".pct");
+        var say = el.querySelector(".say");
+        var t0 = Date.now();
+        var shown = 0;
+        var real = -1;
+        var lang = "";
+        try {
+          lang = (/[?&]lang=(\w+)/.exec(location.search) || [])[1] || localStorage.getItem("cannonfall.lang") || "";
+        } catch (e) {}
+        if (!lang) lang = /^ko\b/i.test(navigator.language || "") ? "ko" : "en";
+        if (lang === "ko") say.textContent = "불러오는 중…";
+        // the pictures, when there: frame / trail (their CSS stand-ins otherwise)
+        var probe = function (src, ok) {
+          var im = new Image();
+          im.onload = function () { ok(im); };
+          im.src = src;
+        };
+        probe("assets/boot/bar-frame.png", function () { el.querySelector(".frame").classList.add("art"); });
+        // (the trail: a strip of frames side by side, each as tall as the strip — 임시 until its picture's spec)
+        probe("assets/boot/bar-trail.png", function (im) {
+          var tr = el.querySelector(".trail");
+          var n = Math.max(1, Math.round(im.width / im.height));
+          var i = 0;
+          tr.classList.add("art");
+          tr.style.backgroundSize = n * 100 + "% 100%";
+          if (n > 1)
+            var iv = setInterval(function () {
+              if (!el.isConnected) return clearInterval(iv);
+              i = (i + 1) % n;
+              tr.style.backgroundPosition = (i / (n - 1)) * 100 + "% 0";
+            }, 80);
+        });
+        // the still title placed as the title scene places its pictures (ui/titleArt.ts: 1920 × 1080 art space,
+        // cover with a 16 px margin, at most a quarter of the width cut off) — no jump when it fades over it
+        var fit = function () {
+          var w = window.innerWidth, h = window.innerHeight, P = 32;
+          var s = Math.min(Math.max((w + P) / 1920, (h + P) / 1080), Math.max((w + P) / 1440, ((h + P) / 1080) * 0.6));
+          el.style.backgroundSize = 1920 * s + "px " + 1080 * s + "px";
+        };
+        fit();
+        window.addEventListener("resize", fit);
+        var draw = function () {
+          var h = bar.clientHeight;
+          bar.style.setProperty("--h", h + "px");
+          var pad = h * 0.17;
+          var w = (bar.clientWidth - 2 * pad) * (shown / 100);
+          fill.style.width = w + "px";
+          ball.style.left = pad + w + "px";
+          pct.textContent = Math.floor(shown) + "%";
+        };
+        var tick = function () {
+          if (!el.isConnected) return;
+          var fake = 30 * (1 - Math.exp(-(Date.now() - t0) / 2500));
+          var want = Math.max(fake, real);
+          // never back, a smooth catch-up
+          shown = Math.min(100, Math.max(shown, shown + (want - shown) * 0.25));
+          if (want - shown < 0.3) shown = Math.max(shown, want);
+          draw();
+          requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        window.__boot = {
+          /** the game's own progress, 0…100 (never lower than shown) */
+          set: function (p) { real = Math.max(real, Math.min(100, p)); },
+          text: function (s) { say.textContent = s; },
+          shown: function () { return shown; },
+          /** loaded: fill up, then fade out over the first scene */
+          done: function () {
+            real = 100;
+            setTimeout(function () {
+              el.classList.add("out");
+              setTimeout(function () { el.remove(); }, 400);
+            }, 180);
+          },
+        };
+      })();
+    </script>
   </body>
 </html>
