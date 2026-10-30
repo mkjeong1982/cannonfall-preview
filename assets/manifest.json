@@ -633,6 +633,227 @@
           "frames": 8
         }
       }
+    },
+    "asteroid-mine": {
+      "bg": "maps/asteroid-mine/bg.webp",
+      "far": "maps/asteroid-mine/far.webp",
+      "mid": "maps/asteroid-mine/mid.webp",
+      "front": "maps/asteroid-mine/front.webp",
+      "fill": "maps/asteroid-mine/fill.webp",
+      "underside": "maps/asteroid-mine/underside.webp",
+      "surface": "maps/asteroid-mine/surface.webp",
+      "rock": "maps/asteroid-mine/rock.webp",
+      "rockTop": "maps/asteroid-mine/rock-top.webp",
+      "hanging": "maps/asteroid-mine/hanging-edge.webp",
+      "fallzone": "maps/asteroid-mine/fallzone.webp",
+      "decor": {
+        "sheet": "maps/asteroid-mine/decor.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      },
+      "chunks": {
+        "sheet": "maps/asteroid-mine/chunks.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "palette": {
+        "sky": "#A45727",
+        "surface": "#B4743F",
+        "soil": "#A85F37",
+        "deep": "#593B43",
+        "outline": "#392B36",
+        "debris": "#9F5D39"
+      },
+      "style": "floating",
+      "fallFx": "void",
+      "layers": {
+        "space": [
+          1920,
+          712
+        ],
+        "items": [
+          {
+            "file": "maps/asteroid-mine/motion-a.webp",
+            "x": 145,
+            "y": 125,
+            "layer": "far",
+            "opacity": 0.28,
+            "speedX": 5
+          },
+          {
+            "file": "maps/asteroid-mine/motion-b.webp",
+            "x": 1620,
+            "y": 215,
+            "layer": "far",
+            "pulseSec": 2.7,
+            "opacity": 0.38
+          }
+        ]
+      },
+      "objects": {
+        "barrel": "objects/barrel-moon-rocks.webp",
+        "own": "objects/explosive-ore-cart.webp",
+        "fx": {
+          "sheet": "objects/fx-ore-cart-burst.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
+      }
+    },
+    "neon-nebula": {
+      "bg": "maps/neon-nebula/bg.webp",
+      "far": "maps/neon-nebula/far.webp",
+      "mid": "maps/neon-nebula/mid.webp",
+      "front": "maps/neon-nebula/front.webp",
+      "fill": "maps/neon-nebula/fill.webp",
+      "underside": "maps/neon-nebula/underside.webp",
+      "surface": "maps/neon-nebula/surface.webp",
+      "rock": "maps/neon-nebula/rock.webp",
+      "rockTop": "maps/neon-nebula/rock-top.webp",
+      "hanging": "maps/neon-nebula/hanging-edge.webp",
+      "fallzone": "maps/neon-nebula/fallzone.webp",
+      "decor": {
+        "sheet": "maps/neon-nebula/decor.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      },
+      "chunks": {
+        "sheet": "maps/neon-nebula/chunks.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "palette": {
+        "sky": "#503E9A",
+        "surface": "#7488C2",
+        "soil": "#8750BB",
+        "deep": "#3B2A72",
+        "outline": "#281A58",
+        "debris": "#A448AC"
+      },
+      "style": "floating",
+      "fallFx": "void",
+      "layers": {
+        "space": [
+          1920,
+          712
+        ],
+        "items": [
+          {
+            "file": "maps/neon-nebula/motion-a.webp",
+            "x": 145,
+            "y": 125,
+            "layer": "far",
+            "opacity": 0.28,
+            "speedX": 5
+          },
+          {
+            "file": "maps/neon-nebula/motion-b.webp",
+            "x": 1620,
+            "y": 215,
+            "layer": "far",
+            "pulseSec": 2.7,
+            "opacity": 0.38
+          }
+        ]
+      },
+      "objects": {
+        "barrel": "objects/barrel-sky-islands.webp",
+        "own": "objects/electric-crystal.webp",
+        "fx": {
+          "sheet": "objects/fx-electric-crystal.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
+      }
+    },
+    "alien-jungle": {
+      "bg": "maps/alien-jungle/bg.webp",
+      "far": "maps/alien-jungle/far.webp",
+      "mid": "maps/alien-jungle/mid.webp",
+      "front": "maps/alien-jungle/front.webp",
+      "fill": "maps/alien-jungle/fill.webp",
+      "underside": "maps/alien-jungle/underside.webp",
+      "surface": "maps/alien-jungle/surface.webp",
+      "rock": "maps/alien-jungle/rock.webp",
+      "rockTop": "maps/alien-jungle/rock-top.webp",
+      "hanging": "maps/alien-jungle/hanging-edge.webp",
+      "fallzone": "maps/alien-jungle/fallzone.webp",
+      "decor": {
+        "sheet": "maps/alien-jungle/decor.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 6
+      },
+      "chunks": {
+        "sheet": "maps/alien-jungle/chunks.webp",
+        "frameW": 96,
+        "frameH": 96,
+        "frames": 4
+      },
+      "palette": {
+        "sky": "#78AC61",
+        "surface": "#7BAC50",
+        "soil": "#5C9B52",
+        "deep": "#313D62",
+        "outline": "#252A47",
+        "debris": "#70418C"
+      },
+      "style": "cliff",
+      "fallFx": "splash",
+      "layers": {
+        "space": [
+          1920,
+          712
+        ],
+        "items": [
+          {
+            "file": "maps/alien-jungle/motion-a.webp",
+            "x": 145,
+            "y": 125,
+            "layer": "far",
+            "opacity": 0.28,
+            "speedX": 5
+          },
+          {
+            "file": "maps/alien-jungle/motion-b.webp",
+            "x": 1620,
+            "y": 215,
+            "layer": "far",
+            "pulseSec": 2.7,
+            "opacity": 0.38
+          }
+        ]
+      },
+      "objects": {
+        "barrel": "objects/barrel-green-canyon.webp",
+        "own": "objects/spore-mushroom.webp",
+        "fx": {
+          "sheet": "objects/fx-spore-cloud.webp",
+          "frameW": 96,
+          "frameH": 96,
+          "frames": 8
+        }
+      },
+      "finals": [
+        {
+          "bg": "maps/alien-jungle/final-1/bg.webp",
+          "far": "maps/alien-jungle/final-1/far.webp",
+          "mid": "maps/alien-jungle/final-1/mid.webp",
+          "card": "adventure/region-final-gate.webp"
+        },
+        {
+          "bg": "maps/alien-jungle/final-2/bg.webp",
+          "far": "maps/alien-jungle/final-2/far.webp",
+          "mid": "maps/alien-jungle/final-2/mid.webp",
+          "card": "adventure/region-final-gate.webp"
+        }
+      ]
     }
   },
   "cannons": {
@@ -2078,6 +2299,381 @@
           63
         ]
       }
+    },
+    "rocksmash": {
+      "bodySheet": "cannons/rocksmash/body-sheet.webp",
+      "barrel": "cannons/rocksmash/barrel.png",
+      "mount": "cannons/rocksmash/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/rocksmash/thumb.webp",
+      "damaged": "cannons/rocksmash/body-damaged.webp",
+      "wreck": "cannons/rocksmash/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
+    },
+    "boss-rocksmash": {
+      "bodySheet": "bosses/rocksmash/body-sheet.webp",
+      "barrel": "bosses/rocksmash/barrel.png",
+      "mount": "bosses/rocksmash/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/rocksmash/body-damaged.webp",
+      "wreck": "bosses/rocksmash/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
+    },
+    "jellyzap": {
+      "bodySheet": "cannons/jellyzap/body-sheet.webp",
+      "barrel": "cannons/jellyzap/barrel.png",
+      "mount": "cannons/jellyzap/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/jellyzap/thumb.webp",
+      "damaged": "cannons/jellyzap/body-damaged.webp",
+      "wreck": "cannons/jellyzap/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
+    },
+    "boss-jellyzap": {
+      "bodySheet": "bosses/jellyzap/body-sheet.webp",
+      "barrel": "bosses/jellyzap/barrel.png",
+      "mount": "bosses/jellyzap/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/jellyzap/body-damaged.webp",
+      "wreck": "bosses/jellyzap/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
+    },
+    "chompod": {
+      "bodySheet": "cannons/chompod/body-sheet.webp",
+      "barrel": "cannons/chompod/barrel.png",
+      "mount": "cannons/chompod/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/chompod/thumb.webp",
+      "damaged": "cannons/chompod/body-damaged.webp",
+      "wreck": "cannons/chompod/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
+    },
+    "boss-chompod": {
+      "bodySheet": "bosses/chompod/body-sheet.webp",
+      "barrel": "bosses/chompod/barrel.png",
+      "mount": "bosses/chompod/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/chompod/body-damaged.webp",
+      "wreck": "bosses/chompod/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
+    },
+    "ironclad": {
+      "bodySheet": "cannons/ironclad/body-sheet.webp",
+      "barrel": "cannons/ironclad/barrel.png",
+      "mount": "cannons/ironclad/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/ironclad/thumb.webp",
+      "damaged": "cannons/ironclad/body-damaged.webp",
+      "wreck": "cannons/ironclad/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
+    },
+    "boss-ironclad": {
+      "bodySheet": "bosses/ironclad/body-sheet.webp",
+      "barrel": "bosses/ironclad/barrel.png",
+      "mount": "bosses/ironclad/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/ironclad/body-damaged.webp",
+      "wreck": "bosses/ironclad/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
+    },
+    "darkstar": {
+      "bodySheet": "cannons/darkstar/body-sheet.webp",
+      "barrel": "cannons/darkstar/barrel.png",
+      "mount": "cannons/darkstar/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "thumb": "cannons/darkstar/thumb.webp",
+      "damaged": "cannons/darkstar/body-damaged.webp",
+      "wreck": "cannons/darkstar/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
+    },
+    "boss-darkstar": {
+      "bodySheet": "bosses/darkstar/body-sheet.webp",
+      "barrel": "bosses/darkstar/barrel.png",
+      "mount": "bosses/darkstar/mount.png",
+      "pivot": {
+        "x": 52,
+        "y": 0
+      },
+      "bodyAnchor": [
+        0.5,
+        1.0
+      ],
+      "barrelPivot": [
+        0.06,
+        0.5
+      ],
+      "damaged": "bosses/darkstar/body-damaged.webp",
+      "wreck": "bosses/darkstar/wreck.webp",
+      "muzzle": [
+        0.962,
+        0.5
+      ],
+      "anchors": {
+        "back": [
+          38,
+          35
+        ],
+        "shoulder": [
+          52,
+          8
+        ],
+        "side": [
+          46,
+          63
+        ]
+      }
     }
   },
   "fx": {
@@ -2618,7 +3214,12 @@
     "puffzilla": "bosses/puffzilla-portrait.webp",
     "moonzor": "bosses/moonzor-portrait.webp",
     "kaboom": "bosses/kaboom-portrait.webp",
-    "hornster": "bosses/hornster-portrait.webp"
+    "hornster": "bosses/hornster-portrait.webp",
+    "rocksmash": "bosses/rocksmash-portrait.webp",
+    "jellyzap": "bosses/jellyzap-portrait.webp",
+    "chompod": "bosses/chompod-portrait.webp",
+    "ironclad": "bosses/ironclad-portrait.webp",
+    "darkstar": "bosses/darkstar-portrait.webp"
   },
   "upgrades": {
     "armor-plate-1": "upgrades/armor-plate-1.png",
@@ -2740,7 +3341,14 @@
     "region-pirate-cove": "adventure/region-pirate-cove.webp",
     "region-thumb-pirate-cove": "adventure/region-thumb-pirate-cove.webp",
     "region-lava-forge": "adventure/region-lava-forge.webp",
-    "region-thumb-lava-forge": "adventure/region-thumb-lava-forge.webp"
+    "region-thumb-lava-forge": "adventure/region-thumb-lava-forge.webp",
+    "region-asteroid-mine": "adventure/region-asteroid-mine.webp",
+    "region-thumb-asteroid-mine": "adventure/region-thumb-asteroid-mine.webp",
+    "region-neon-nebula": "adventure/region-neon-nebula.webp",
+    "region-thumb-neon-nebula": "adventure/region-thumb-neon-nebula.webp",
+    "region-alien-jungle": "adventure/region-alien-jungle.webp",
+    "region-thumb-alien-jungle": "adventure/region-thumb-alien-jungle.webp",
+    "region-thumb-alien-jungle~final-1": "adventure/region-thumb-final-gate.webp"
   },
   "bossArt": {
     "grumbolt": {
@@ -2892,6 +3500,116 @@
       },
       "blast": {
         "sheet": "bosses/moonzor/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "rocksmash": {
+      "look": "boss-rocksmash",
+      "aura": {
+        "sheet": "bosses/rocksmash/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/rocksmash/shell.png",
+      "trail": {
+        "sheet": "bosses/rocksmash/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/rocksmash/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "jellyzap": {
+      "look": "boss-jellyzap",
+      "aura": {
+        "sheet": "bosses/jellyzap/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/jellyzap/shell.png",
+      "trail": {
+        "sheet": "bosses/jellyzap/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/jellyzap/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "chompod": {
+      "look": "boss-chompod",
+      "aura": {
+        "sheet": "bosses/chompod/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/chompod/shell.png",
+      "trail": {
+        "sheet": "bosses/chompod/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/chompod/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "ironclad": {
+      "look": "boss-ironclad",
+      "aura": {
+        "sheet": "bosses/ironclad/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/ironclad/shell.png",
+      "trail": {
+        "sheet": "bosses/ironclad/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/ironclad/impact-sheet.webp",
+        "frameW": 256,
+        "frameH": 256,
+        "frames": 10
+      }
+    },
+    "darkstar": {
+      "look": "boss-darkstar",
+      "aura": {
+        "sheet": "bosses/darkstar/aura-sheet.webp",
+        "frameW": 192,
+        "frameH": 144,
+        "frames": 12
+      },
+      "shell": "bosses/darkstar/shell.png",
+      "trail": {
+        "sheet": "bosses/darkstar/trail-sheet.webp",
+        "frameW": 64,
+        "frameH": 64,
+        "frames": 8
+      },
+      "blast": {
+        "sheet": "bosses/darkstar/impact-sheet.webp",
         "frameW": 256,
         "frameH": 256,
         "frames": 10
