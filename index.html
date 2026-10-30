@@ -6,13 +6,19 @@
     <title>Cannonfall</title>
     <!-- TASK-125: the still title first thing, before the game's script -->
     <link rel="preload" as="image" href="assets/boot/title-still.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/title/logo.webp" fetchpriority="high" />
     <style>
       html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #1d2b3a; overscroll-behavior: none; }
       #game { position: fixed; inset: 0; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
       canvas { display: block; touch-action: none; }
       /* TASK-125: the boot screen — the still title (plain colour without it), the cannonball bar (CSS alone without its pictures) */
-      #boot { position: fixed; inset: 0; z-index: 10; background: #1d2b3a url(assets/boot/title-still.webp) center / cover no-repeat; transition: opacity 0.35s ease-out; pointer-events: none; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      /* TASK-147: laid out as the title scene lays out its screen — #boot .stage turned like #game on an upright phone, the
+         backdrop (the title's layers and cannons, no logo) placed as ui/titleArt.ts places them, the logo as
+         TitleScene places it, the bar where TAP TO START comes (all set by the script below) */
+      #boot { position: fixed; inset: 0; z-index: 10; background: #1d2b3a; transition: opacity 0.35s ease-out; pointer-events: none; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
       #boot.out { opacity: 0; }
+      #boot .stage { position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; transform-origin: 0 0; background: #1d2b3a url(assets/boot/title-still.webp) center / cover no-repeat; }
+      #boot .logo { position: absolute; display: none; }
       #boot .bar { position: absolute; left: 50%; bottom: max(9vh, 22px); transform: translateX(-50%); width: min(62vw, 520px); height: clamp(26px, 7.5vh, 44px); }
       #boot .frame { position: absolute; inset: 0; border-radius: 999px; background: #1a1206; box-shadow: inset 0 2px 4px #000a, 0 0 0 3px #f6c64b, 0 0 0 5px #5a3a0e, 0 4px 10px #0008; }
       #boot .frame.art { box-shadow: 0 2px 8px #0007; background: rgba(10, 16, 24, 0.6); background-clip: padding-box; border-style: solid; border-width: 0 calc(var(--h) / 2); border-image: url(assets/boot/bar-frame.png) 0 48 fill / 0 calc(var(--h) / 2) stretch; }
@@ -20,7 +26,7 @@
         background: url(assets/boot/bar-fill.png) left center / auto 100% repeat-x, repeating-linear-gradient(-45deg, #ffb02e 0 8px, #ff7a1a 8px 16px), linear-gradient(#ffe066, #ff7a1a);
         background-blend-mode: normal; animation: boot-stripes 0.6s linear infinite; }
       @keyframes boot-stripes { to { background-position: 46px center, 22.6px 0, 0 0; } }
-      #boot .ball { position: absolute; top: 50%; left: 0; width: calc(var(--h) * 1.5); height: calc(var(--h) * 1.5); transform: translate(-50%, -50%); }
+      #boot .ball { position: absolute; top: 50%; left: 0; width: calc(var(--h) * 1.1); height: calc(var(--h) * 1.1); transform: translate(-50%, -50%); }
       #boot .ball img, #boot .ball i { position: absolute; inset: 0; width: 100%; height: 100%; animation: boot-roll 0.7s linear infinite; }
       #boot .ball i { display: none; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #8a8f99, #2a2d33 55%, #0d0e10); box-shadow: 0 0 0 2px #0008; }
       #boot .ball.css img { display: none; }
@@ -29,21 +35,22 @@
       #boot .trail.art { filter: none; border-radius: 0; background: url(assets/boot/bar-trail.png) 0 0 / 100% 100% no-repeat; animation: none; }
       @keyframes boot-roll { to { transform: rotate(360deg); } }
       @keyframes boot-flicker { 50% { opacity: 0.7; } }
-      #boot .words { position: absolute; left: 0; right: 0; top: calc(100% + 8px); display: flex; justify-content: center; gap: 0.6em; color: #fff; font-size: clamp(11px, 2.2vh, 15px); font-weight: 700; text-shadow: 0 1px 3px #000, 0 0 2px #000; }
+      #boot .words { position: absolute; left: 0; right: 0; top: calc(100% + 8px); display: flex; justify-content: center; gap: 0.6em; color: #fff; font-size: clamp(11px, calc(var(--h) * 0.4), 16px); font-weight: 700; text-shadow: 0 1px 3px #000, 0 0 2px #000; }
       #boot .pct { opacity: 0.75; font-variant-numeric: tabular-nums; }
     </style>
-    <script type="module" crossorigin src="/cannonfall-preview/assets/index-C7uEKr2p.js"></script>
+    <script type="module" crossorigin src="/cannonfall-preview/assets/index-CCpSGW9z.js"></script>
   </head>
   <body>
     <div id="game"></div>
-    <div id="boot">
+    <div id="boot"><div class="stage">
+      <img class="logo" alt="" src="assets/title/logo.webp" />
       <div class="bar">
         <div class="frame"></div>
         <div class="fill"></div>
-        <div class="ball"><div class="trail"></div><img alt="" src="assets/boot/bar-ball.png" onerror="this.parentNode.classList.add('css')" /><i></i></div>
+        <div class="ball"><div class="trail"></div><img alt="" src="assets/ui/reload/ball.png" onerror="this.parentNode.classList.add('css')" /><i></i></div>
         <div class="words"><span class="say">Loading…</span><span class="pct">0%</span></div>
       </div>
-    </div>
+    </div></div>
     <script>
       // TASK-125: the bar from the first byte — a slow make-believe 0 → 30 % while the game's script comes,
       // then the game's own loading (window.__boot.set) up to 100 %, a fade (window.__boot.done)
@@ -84,13 +91,54 @@
               tr.style.backgroundPosition = (i / (n - 1)) * 100 + "% 0";
             }, 80);
         });
-        // the still title placed as the title scene places its pictures (ui/titleArt.ts: 1920 × 1080 art space,
-        // cover with a 16 px margin, at most a quarter of the width cut off) — no jump when it fades over it
+        // TASK-147: the screen as the game sees it (core/viewport.ts): an upright touch phone turned 90° clockwise,
+        // the safe area turned with it; then the title's layout (ui/titleArt.ts, scenes/TitleScene.ts)
+        var stage = el.querySelector(".stage");
+        var logo = el.querySelector(".logo");
+        var q = location.search;
+        var fakeSafe = /[?&]e2e\b/.test(q) && (/[?&]safe=([\d.]+),([\d.]+),([\d.]+),([\d.]+)/.exec(q) || null);
+        var probeSafe = document.createElement("div");
+        probeSafe.style.cssText = "position:fixed;left:0;top:0;width:0;height:0;visibility:hidden;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)";
+        el.appendChild(probeSafe);
+        var mm = function (m) { return window.matchMedia ? window.matchMedia(m).matches : false; };
+        var clamp = function (v, a, b) { return Math.min(b, Math.max(a, v)); };
         var fit = function () {
-          var w = window.innerWidth, h = window.innerHeight, P = 32;
+          var sw = window.innerWidth, sh = window.innerHeight;
+          var rot = sh > sw && (mm("(pointer: coarse)") || (navigator.maxTouchPoints > 0 && !mm("(hover: hover)")));
+          var cs = getComputedStyle(probeSafe);
+          var s4 = fakeSafe ? fakeSafe.slice(1).map(Number) : [cs.paddingTop, cs.paddingRight, cs.paddingBottom, cs.paddingLeft].map(function (v) { return Math.round(parseFloat(v) || 0); });
+          // (turned clockwise: the game's top = the screen's right, …)
+          var sf = rot ? { t: s4[1], r: s4[2], b: s4[3], l: s4[0] } : { t: s4[0], r: s4[1], b: s4[2], l: s4[3] };
+          var w = rot ? sh : sw, h = rot ? sw : sh, P = 32;
+          stage.style.width = w + "px";
+          stage.style.height = h + "px";
+          stage.style.transform = rot ? "translateX(" + sw + "px) rotate(90deg)" : "";
+          // the backdrop: cover with the parallax margin, at most a quarter of the width cut off
           var s = Math.min(Math.max((w + P) / 1920, (h + P) / 1080), Math.max((w + P) / 1440, ((h + P) / 1080) * 0.6));
-          el.style.backgroundSize = 1920 * s + "px " + 1080 * s + "px";
+          stage.style.backgroundSize = 1920 * s + "px " + 1080 * s + "px";
+          var top = sf.t, bottom = h - sf.b;
+          var k = clamp(Math.min((w - sf.l - sf.r) / 960, (bottom - top) / 540), 0.55, 2);
+          // the logo: top centre, at most 62 % of the width (820 k) by a third of the height
+          if (logo.naturalWidth) {
+            var ls = Math.min(Math.min(w * 0.62, 820 * k) / logo.naturalWidth, clamp((bottom - top) * 0.34, 70, 300) / logo.naturalHeight);
+            logo.style.width = logo.naturalWidth * ls + "px";
+            logo.style.height = logo.naturalHeight * ls + "px";
+            logo.style.left = w / 2 - (logo.naturalWidth * ls) / 2 + "px";
+            logo.style.top = top + (bottom - top) * 0.05 + "px";
+            logo.style.display = "block";
+          }
+          // the bar where TAP TO START comes (its size: about that line's), between the cannons
+          var fs = clamp(34 * k, 24, 64);
+          var bh = Math.round(clamp(fs * 0.85, 22, 48));
+          var bw = Math.round(Math.min(fs * 7, w * 0.36));
+          bar.style.width = bw + "px";
+          bar.style.left = Math.round(w / 2 - bw / 2) + "px";
+          bar.style.transform = "none";
+          bar.style.height = bh + "px";
+          bar.style.bottom = "auto";
+          bar.style.top = top + (bottom - top) * 0.8 - bh / 2 + "px";
         };
+        logo.onload = fit;
         fit();
         window.addEventListener("resize", fit);
         var draw = function () {
