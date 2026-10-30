@@ -4,6 +4,7 @@
  "flight": 1.1,
  "wind": 8.0,
  "veil_hum": 2.0,
+ "stun_dizzy": 1.2,
  "bgm_battle": 46.666667,
  "bgm_lobby": 33.6
 }
