@@ -6,5 +6,16 @@
  "veil_hum": 2.0,
  "stun_dizzy": 1.2,
  "bgm_battle": 46.666667,
- "bgm_lobby": 33.6
+ "bgm_battle_tense": 46.666667,
+ "bgm_lobby": 33.6,
+ "bgm_moon-rocks": 30.967732,
+ "bgm_desert-ruins": 30.47619,
+ "bgm_pirate-cove": 30.638299,
+ "bgm_lava-forge": 30.967732,
+ "bgm_snow-fortress": 30.0,
+ "bgm_sky-islands": 31.304354,
+ "bgm_green-canyon": 30.236213,
+ "bgm_asteroid-mine": 30.0,
+ "bgm_neon-nebula": 31.47542,
+ "bgm_alien-jungle": 30.315782
 }
